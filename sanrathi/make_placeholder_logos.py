@@ -49,7 +49,9 @@ def wordmark(width: int, height: int, text_color=INK, tile=INK, dot=RADIUM,
 
 def main() -> None:
     pub, app = NEXT / "public", NEXT / "app"
-    wordmark(400, 100).save(pub / "logo-with-bg.png")
+    # Used in square boxes (40x40 headers, sidebar circle), so it is the square
+    # mark, at Presenton's original 161x166 size.
+    mark(161).resize((161, 166), Image.LANCZOS).save(pub / "logo-with-bg.png")
     wordmark(512, 128).save(pub / "Logo.png")
     wordmark(512, 128, text_color=PAPER, tile=PAPER, dot=RADIUM).save(pub / "logo-white.png")
     # Splash is used as a CSS mask (1023x342): one solid shape, dot punched out,

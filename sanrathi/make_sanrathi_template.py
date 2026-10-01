@@ -4,8 +4,10 @@ and swapping its colours. Run from the repo root:
 Dark variant (white backgrounds -> ink, dark text -> paper):
     python sanrathi/make_sanrathi_template.py general sanrathi-ink "Sanrathi Ink" --dark
 """
-import json, re, shutil, sys
+import colorsys, json, re, shutil, sys
 from pathlib import Path
+
+from PIL import Image   # pip install pillow
 
 SRC, NEW_ID, NEW_NAME = sys.argv[1], sys.argv[2], sys.argv[3]
 DARK = "--dark" in sys.argv[4:]
@@ -51,4 +53,36 @@ data["name"] = NEW_NAME
 data["description"] = ("Sanrathi classroom template, dark: ink background, paper text, radium."
                        if DARK else "Sanrathi classroom template: ink, paper and radium.")
 path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+
+# Decorative PNGs in static/ (sparkles, squiggles, background washes) are also
+# purple. Recolour them, keeping their transparency: solid accents -> radium,
+# faint washes -> ink (paper template) or paper (dark template). Images that are
+# mostly not purple (photos, the thumbnail) are left alone.
+RADIUM, INK, PAPER = (0xC7, 0xFF, 0x16), (0x0C, 0x0C, 0x0B), (0xF7, 0xF7, 0xF3)
+
+
+def is_purple(r, g, b):
+    h, l, s = colorsys.rgb_to_hls(r / 255, g / 255, b / 255)
+    return 0.66 <= h <= 0.85 and s > 0.25
+
+
+for png in sorted((dst / "static").glob("*.png")):
+    if png.name == "thumbnail.png":
+        continue
+    im = Image.open(png).convert("RGBA")
+    px = im.load()
+    visible = [px[x, y] for x in range(im.width) for y in range(im.height) if px[x, y][3] > 0]
+    purple = [p for p in visible if is_purple(*p[:3])]
+    if not visible or len(purple) < 0.5 * len(visible):
+        continue
+    accent = max(p[3] for p in purple) > 120
+    target = RADIUM if accent else (PAPER if DARK else INK)
+    for x in range(im.width):
+        for y in range(im.height):
+            r, g, b, a = px[x, y]
+            if a and is_purple(r, g, b):
+                px[x, y] = (*target, a)
+    im.save(png)
+    print(f"  recoloured {png.name} -> {'radium' if accent else 'wash'}")
+
 print(f"Created {dst}. Now replace {dst/'static'/'thumbnail.png'} with a screenshot.")
