@@ -9141,6 +9141,73 @@
               "name": "attribution_card_group"
             }
           ]
+        },
+        {
+          "id": "sanrathi_watermark",
+          "description": "Fixed Sanrathi attribution mark, bottom-right of every slide.",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "elements": [
+            {
+              "type": "image",
+              "position": {
+                "x": 1230,
+                "y": 670
+              },
+              "size": {
+                "width": 32,
+                "height": 32
+              },
+              "rotation": 0,
+              "data": "static/sanrathi-watermark-mark.png",
+              "fit": "contain",
+              "decorative": true,
+              "name": "sanrathi_watermark_mark",
+              "is_icon": true
+            },
+            {
+              "type": "text",
+              "position": {
+                "x": 1102,
+                "y": 670
+              },
+              "size": {
+                "width": 120,
+                "height": 32
+              },
+              "font": {
+                "size": 10,
+                "family": "Poppins",
+                "color": "#F7F7F3",
+                "bold": true,
+                "italic": false,
+                "line_height": 1
+              },
+              "alignment": {
+                "horizontal": "right",
+                "vertical": "middle"
+              },
+              "runs": [
+                {
+                  "text": "Sanrathi.SM",
+                  "font": {
+                    "size": 10,
+                    "family": "Poppins",
+                    "color": "#F7F7F3",
+                    "bold": true,
+                    "italic": false,
+                    "line_height": 1
+                  }
+                }
+              ],
+              "decorative": true,
+              "name": "sanrathi_watermark_text",
+              "max_length": 21,
+              "min_length": 1
+            }
+          ]
         }
       ]
     },
@@ -9375,6 +9442,73 @@
               "max_length": 274,
               "min_length": 105,
               "rotation": 0
+            }
+          ]
+        },
+        {
+          "id": "sanrathi_watermark",
+          "description": "Fixed Sanrathi attribution mark, bottom-right of every slide.",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "elements": [
+            {
+              "type": "image",
+              "position": {
+                "x": 1230,
+                "y": 670
+              },
+              "size": {
+                "width": 32,
+                "height": 32
+              },
+              "rotation": 0,
+              "data": "static/sanrathi-watermark-mark.png",
+              "fit": "contain",
+              "decorative": true,
+              "name": "sanrathi_watermark_mark",
+              "is_icon": true
+            },
+            {
+              "type": "text",
+              "position": {
+                "x": 1102,
+                "y": 670
+              },
+              "size": {
+                "width": 120,
+                "height": 32
+              },
+              "font": {
+                "size": 10,
+                "family": "Poppins",
+                "color": "#F7F7F3",
+                "bold": true,
+                "italic": false,
+                "line_height": 1
+              },
+              "alignment": {
+                "horizontal": "right",
+                "vertical": "middle"
+              },
+              "runs": [
+                {
+                  "text": "Sanrathi.SM",
+                  "font": {
+                    "size": 10,
+                    "family": "Poppins",
+                    "color": "#F7F7F3",
+                    "bold": true,
+                    "italic": false,
+                    "line_height": 1
+                  }
+                }
+              ],
+              "decorative": true,
+              "name": "sanrathi_watermark_text",
+              "max_length": 21,
+              "min_length": 1
             }
           ]
         }
@@ -10180,6 +10314,73 @@
               "is_icon": false
             }
           ]
+        },
+        {
+          "id": "sanrathi_watermark",
+          "description": "Fixed Sanrathi attribution mark, bottom-right of every slide.",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "elements": [
+            {
+              "type": "image",
+              "position": {
+                "x": 1230,
+                "y": 670
+              },
+              "size": {
+                "width": 32,
+                "height": 32
+              },
+              "rotation": 0,
+              "data": "static/sanrathi-watermark-mark.png",
+              "fit": "contain",
+              "decorative": true,
+              "name": "sanrathi_watermark_mark",
+              "is_icon": true
+            },
+            {
+              "type": "text",
+              "position": {
+                "x": 1102,
+                "y": 670
+              },
+              "size": {
+                "width": 120,
+                "height": 32
+              },
+              "font": {
+                "size": 10,
+                "family": "Poppins",
+                "color": "#F7F7F3",
+                "bold": true,
+                "italic": false,
+                "line_height": 1
+              },
+              "alignment": {
+                "horizontal": "right",
+                "vertical": "middle"
+              },
+              "runs": [
+                {
+                  "text": "Sanrathi.SM",
+                  "font": {
+                    "size": 10,
+                    "family": "Poppins",
+                    "color": "#F7F7F3",
+                    "bold": true,
+                    "italic": false,
+                    "line_height": 1
+                  }
+                }
+              ],
+              "decorative": true,
+              "name": "sanrathi_watermark_text",
+              "max_length": 21,
+              "min_length": 1
+            }
+          ]
         }
       ]
     },
@@ -10788,6 +10989,73 @@
               "name": "feature_list",
               "max_children": 3,
               "min_children": 2
+            }
+          ]
+        },
+        {
+          "id": "sanrathi_watermark",
+          "description": "Fixed Sanrathi attribution mark, bottom-right of every slide.",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "elements": [
+            {
+              "type": "image",
+              "position": {
+                "x": 1230,
+                "y": 670
+              },
+              "size": {
+                "width": 32,
+                "height": 32
+              },
+              "rotation": 0,
+              "data": "static/sanrathi-watermark-mark.png",
+              "fit": "contain",
+              "decorative": true,
+              "name": "sanrathi_watermark_mark",
+              "is_icon": true
+            },
+            {
+              "type": "text",
+              "position": {
+                "x": 1102,
+                "y": 670
+              },
+              "size": {
+                "width": 120,
+                "height": 32
+              },
+              "font": {
+                "size": 10,
+                "family": "Poppins",
+                "color": "#F7F7F3",
+                "bold": true,
+                "italic": false,
+                "line_height": 1
+              },
+              "alignment": {
+                "horizontal": "right",
+                "vertical": "middle"
+              },
+              "runs": [
+                {
+                  "text": "Sanrathi.SM",
+                  "font": {
+                    "size": 10,
+                    "family": "Poppins",
+                    "color": "#F7F7F3",
+                    "bold": true,
+                    "italic": false,
+                    "line_height": 1
+                  }
+                }
+              ],
+              "decorative": true,
+              "name": "sanrathi_watermark_text",
+              "max_length": 21,
+              "min_length": 1
             }
           ]
         }
@@ -11482,6 +11750,73 @@
               "min_children": 2
             }
           ]
+        },
+        {
+          "id": "sanrathi_watermark",
+          "description": "Fixed Sanrathi attribution mark, bottom-right of every slide.",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "elements": [
+            {
+              "type": "image",
+              "position": {
+                "x": 1230,
+                "y": 670
+              },
+              "size": {
+                "width": 32,
+                "height": 32
+              },
+              "rotation": 0,
+              "data": "static/sanrathi-watermark-mark.png",
+              "fit": "contain",
+              "decorative": true,
+              "name": "sanrathi_watermark_mark",
+              "is_icon": true
+            },
+            {
+              "type": "text",
+              "position": {
+                "x": 1102,
+                "y": 670
+              },
+              "size": {
+                "width": 120,
+                "height": 32
+              },
+              "font": {
+                "size": 10,
+                "family": "Poppins",
+                "color": "#F7F7F3",
+                "bold": true,
+                "italic": false,
+                "line_height": 1
+              },
+              "alignment": {
+                "horizontal": "right",
+                "vertical": "middle"
+              },
+              "runs": [
+                {
+                  "text": "Sanrathi.SM",
+                  "font": {
+                    "size": 10,
+                    "family": "Poppins",
+                    "color": "#F7F7F3",
+                    "bold": true,
+                    "italic": false,
+                    "line_height": 1
+                  }
+                }
+              ],
+              "decorative": true,
+              "name": "sanrathi_watermark_text",
+              "max_length": 21,
+              "min_length": 1
+            }
+          ]
         }
       ]
     },
@@ -12024,6 +12359,73 @@
               "min_children": 3
             }
           ]
+        },
+        {
+          "id": "sanrathi_watermark",
+          "description": "Fixed Sanrathi attribution mark, bottom-right of every slide.",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "elements": [
+            {
+              "type": "image",
+              "position": {
+                "x": 1230,
+                "y": 670
+              },
+              "size": {
+                "width": 32,
+                "height": 32
+              },
+              "rotation": 0,
+              "data": "static/sanrathi-watermark-mark.png",
+              "fit": "contain",
+              "decorative": true,
+              "name": "sanrathi_watermark_mark",
+              "is_icon": true
+            },
+            {
+              "type": "text",
+              "position": {
+                "x": 1102,
+                "y": 670
+              },
+              "size": {
+                "width": 120,
+                "height": 32
+              },
+              "font": {
+                "size": 10,
+                "family": "Poppins",
+                "color": "#F7F7F3",
+                "bold": true,
+                "italic": false,
+                "line_height": 1
+              },
+              "alignment": {
+                "horizontal": "right",
+                "vertical": "middle"
+              },
+              "runs": [
+                {
+                  "text": "Sanrathi.SM",
+                  "font": {
+                    "size": 10,
+                    "family": "Poppins",
+                    "color": "#F7F7F3",
+                    "bold": true,
+                    "italic": false,
+                    "line_height": 1
+                  }
+                }
+              ],
+              "decorative": true,
+              "name": "sanrathi_watermark_text",
+              "max_length": 21,
+              "min_length": 1
+            }
+          ]
         }
       ]
     },
@@ -12482,6 +12884,73 @@
               "rotation": 0,
               "max_children": 4,
               "min_children": 2
+            }
+          ]
+        },
+        {
+          "id": "sanrathi_watermark",
+          "description": "Fixed Sanrathi attribution mark, bottom-right of every slide.",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "elements": [
+            {
+              "type": "image",
+              "position": {
+                "x": 1230,
+                "y": 670
+              },
+              "size": {
+                "width": 32,
+                "height": 32
+              },
+              "rotation": 0,
+              "data": "static/sanrathi-watermark-mark.png",
+              "fit": "contain",
+              "decorative": true,
+              "name": "sanrathi_watermark_mark",
+              "is_icon": true
+            },
+            {
+              "type": "text",
+              "position": {
+                "x": 1102,
+                "y": 670
+              },
+              "size": {
+                "width": 120,
+                "height": 32
+              },
+              "font": {
+                "size": 10,
+                "family": "Poppins",
+                "color": "#F7F7F3",
+                "bold": true,
+                "italic": false,
+                "line_height": 1
+              },
+              "alignment": {
+                "horizontal": "right",
+                "vertical": "middle"
+              },
+              "runs": [
+                {
+                  "text": "Sanrathi.SM",
+                  "font": {
+                    "size": 10,
+                    "family": "Poppins",
+                    "color": "#F7F7F3",
+                    "bold": true,
+                    "italic": false,
+                    "line_height": 1
+                  }
+                }
+              ],
+              "decorative": true,
+              "name": "sanrathi_watermark_text",
+              "max_length": 21,
+              "min_length": 1
             }
           ]
         }
@@ -13222,6 +13691,73 @@
             }
           ],
           "description": "Two-by-two grid of bullet points, each pairing a number with title and descriptive text."
+        },
+        {
+          "id": "sanrathi_watermark",
+          "description": "Fixed Sanrathi attribution mark, bottom-right of every slide.",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "elements": [
+            {
+              "type": "image",
+              "position": {
+                "x": 1230,
+                "y": 670
+              },
+              "size": {
+                "width": 32,
+                "height": 32
+              },
+              "rotation": 0,
+              "data": "static/sanrathi-watermark-mark.png",
+              "fit": "contain",
+              "decorative": true,
+              "name": "sanrathi_watermark_mark",
+              "is_icon": true
+            },
+            {
+              "type": "text",
+              "position": {
+                "x": 1102,
+                "y": 670
+              },
+              "size": {
+                "width": 120,
+                "height": 32
+              },
+              "font": {
+                "size": 10,
+                "family": "Poppins",
+                "color": "#F7F7F3",
+                "bold": true,
+                "italic": false,
+                "line_height": 1
+              },
+              "alignment": {
+                "horizontal": "right",
+                "vertical": "middle"
+              },
+              "runs": [
+                {
+                  "text": "Sanrathi.SM",
+                  "font": {
+                    "size": 10,
+                    "family": "Poppins",
+                    "color": "#F7F7F3",
+                    "bold": true,
+                    "italic": false,
+                    "line_height": 1
+                  }
+                }
+              ],
+              "decorative": true,
+              "name": "sanrathi_watermark_text",
+              "max_length": 21,
+              "min_length": 1
+            }
+          ]
         }
       ],
       "elements": []
@@ -13638,6 +14174,73 @@
                 }
               ],
               "closed": false
+            }
+          ]
+        },
+        {
+          "id": "sanrathi_watermark",
+          "description": "Fixed Sanrathi attribution mark, bottom-right of every slide.",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "elements": [
+            {
+              "type": "image",
+              "position": {
+                "x": 1230,
+                "y": 670
+              },
+              "size": {
+                "width": 32,
+                "height": 32
+              },
+              "rotation": 0,
+              "data": "static/sanrathi-watermark-mark.png",
+              "fit": "contain",
+              "decorative": true,
+              "name": "sanrathi_watermark_mark",
+              "is_icon": true
+            },
+            {
+              "type": "text",
+              "position": {
+                "x": 1102,
+                "y": 670
+              },
+              "size": {
+                "width": 120,
+                "height": 32
+              },
+              "font": {
+                "size": 10,
+                "family": "Poppins",
+                "color": "#F7F7F3",
+                "bold": true,
+                "italic": false,
+                "line_height": 1
+              },
+              "alignment": {
+                "horizontal": "right",
+                "vertical": "middle"
+              },
+              "runs": [
+                {
+                  "text": "Sanrathi.SM",
+                  "font": {
+                    "size": 10,
+                    "family": "Poppins",
+                    "color": "#F7F7F3",
+                    "bold": true,
+                    "italic": false,
+                    "line_height": 1
+                  }
+                }
+              ],
+              "decorative": true,
+              "name": "sanrathi_watermark_text",
+              "max_length": 21,
+              "min_length": 1
             }
           ]
         }
@@ -14336,6 +14939,73 @@
               "name": "supporting_note",
               "max_length": 210,
               "min_length": 105
+            }
+          ]
+        },
+        {
+          "id": "sanrathi_watermark",
+          "description": "Fixed Sanrathi attribution mark, bottom-right of every slide.",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "elements": [
+            {
+              "type": "image",
+              "position": {
+                "x": 1230,
+                "y": 670
+              },
+              "size": {
+                "width": 32,
+                "height": 32
+              },
+              "rotation": 0,
+              "data": "static/sanrathi-watermark-mark.png",
+              "fit": "contain",
+              "decorative": true,
+              "name": "sanrathi_watermark_mark",
+              "is_icon": true
+            },
+            {
+              "type": "text",
+              "position": {
+                "x": 1102,
+                "y": 670
+              },
+              "size": {
+                "width": 120,
+                "height": 32
+              },
+              "font": {
+                "size": 10,
+                "family": "Poppins",
+                "color": "#F7F7F3",
+                "bold": true,
+                "italic": false,
+                "line_height": 1
+              },
+              "alignment": {
+                "horizontal": "right",
+                "vertical": "middle"
+              },
+              "runs": [
+                {
+                  "text": "Sanrathi.SM",
+                  "font": {
+                    "size": 10,
+                    "family": "Poppins",
+                    "color": "#F7F7F3",
+                    "bold": true,
+                    "italic": false,
+                    "line_height": 1
+                  }
+                }
+              ],
+              "decorative": true,
+              "name": "sanrathi_watermark_text",
+              "max_length": 21,
+              "min_length": 1
             }
           ]
         }
@@ -16407,6 +17077,73 @@
             }
           ],
           "description": "A grid with two columns and 5 rows of item with number in rounded rectangle box, text and page number."
+        },
+        {
+          "id": "sanrathi_watermark",
+          "description": "Fixed Sanrathi attribution mark, bottom-right of every slide.",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "elements": [
+            {
+              "type": "image",
+              "position": {
+                "x": 1230,
+                "y": 670
+              },
+              "size": {
+                "width": 32,
+                "height": 32
+              },
+              "rotation": 0,
+              "data": "static/sanrathi-watermark-mark.png",
+              "fit": "contain",
+              "decorative": true,
+              "name": "sanrathi_watermark_mark",
+              "is_icon": true
+            },
+            {
+              "type": "text",
+              "position": {
+                "x": 1102,
+                "y": 670
+              },
+              "size": {
+                "width": 120,
+                "height": 32
+              },
+              "font": {
+                "size": 10,
+                "family": "Poppins",
+                "color": "#F7F7F3",
+                "bold": true,
+                "italic": false,
+                "line_height": 1
+              },
+              "alignment": {
+                "horizontal": "right",
+                "vertical": "middle"
+              },
+              "runs": [
+                {
+                  "text": "Sanrathi.SM",
+                  "font": {
+                    "size": 10,
+                    "family": "Poppins",
+                    "color": "#F7F7F3",
+                    "bold": true,
+                    "italic": false,
+                    "line_height": 1
+                  }
+                }
+              ],
+              "decorative": true,
+              "name": "sanrathi_watermark_text",
+              "max_length": 21,
+              "min_length": 1
+            }
+          ]
         }
       ],
       "elements": []
@@ -17389,6 +18126,73 @@
               "name": "profile_grid",
               "max_children": 4,
               "min_children": 4
+            }
+          ]
+        },
+        {
+          "id": "sanrathi_watermark",
+          "description": "Fixed Sanrathi attribution mark, bottom-right of every slide.",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "elements": [
+            {
+              "type": "image",
+              "position": {
+                "x": 1230,
+                "y": 670
+              },
+              "size": {
+                "width": 32,
+                "height": 32
+              },
+              "rotation": 0,
+              "data": "static/sanrathi-watermark-mark.png",
+              "fit": "contain",
+              "decorative": true,
+              "name": "sanrathi_watermark_mark",
+              "is_icon": true
+            },
+            {
+              "type": "text",
+              "position": {
+                "x": 1102,
+                "y": 670
+              },
+              "size": {
+                "width": 120,
+                "height": 32
+              },
+              "font": {
+                "size": 10,
+                "family": "Poppins",
+                "color": "#F7F7F3",
+                "bold": true,
+                "italic": false,
+                "line_height": 1
+              },
+              "alignment": {
+                "horizontal": "right",
+                "vertical": "middle"
+              },
+              "runs": [
+                {
+                  "text": "Sanrathi.SM",
+                  "font": {
+                    "size": 10,
+                    "family": "Poppins",
+                    "color": "#F7F7F3",
+                    "bold": true,
+                    "italic": false,
+                    "line_height": 1
+                  }
+                }
+              ],
+              "decorative": true,
+              "name": "sanrathi_watermark_text",
+              "max_length": 21,
+              "min_length": 1
             }
           ]
         }
