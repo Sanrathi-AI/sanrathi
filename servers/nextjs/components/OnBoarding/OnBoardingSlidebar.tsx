@@ -1,3 +1,4 @@
+// Modified by Sanrathi, 2026
 import React from 'react'
 
 const OnBoardingSlidebar = ({ step }: { step: number }) => {

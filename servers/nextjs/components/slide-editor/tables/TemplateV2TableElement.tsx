@@ -1,3 +1,4 @@
+// Modified by Sanrathi, 2026
 import { Group, Line, Rect, Text } from "react-konva";
 import { renderMarkdownTextRuns } from "@/components/slide-editor/text/markdown-text";
 import type { TextRun } from "@/components/slide-editor/types";

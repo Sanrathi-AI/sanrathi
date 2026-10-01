@@ -1,3 +1,4 @@
+// Modified by Sanrathi, 2026
 // Added by Sanrathi, 2026: Open-source licenses page (Apache 2.0 attribution).
 import React from "react";
 

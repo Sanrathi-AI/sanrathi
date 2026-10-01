@@ -1,4 +1,5 @@
 "use client";
+// Modified by Sanrathi, 2026
 
 import React from "react";
 import { LayoutDashboard, Star, Brain, Settings, HelpCircle, UsersRound, Scale } from "lucide-react";

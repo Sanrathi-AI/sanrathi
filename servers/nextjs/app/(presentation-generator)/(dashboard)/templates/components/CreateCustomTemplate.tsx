@@ -1,4 +1,5 @@
 "use client";
+// Modified by Sanrathi, 2026
 /* eslint-disable @next/next/no-img-element */
 
 import { Plus, Sparkles } from "lucide-react";

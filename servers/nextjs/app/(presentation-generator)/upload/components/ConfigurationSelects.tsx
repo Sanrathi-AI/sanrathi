@@ -1,3 +1,4 @@
+// Modified by Sanrathi, 2026
 import { LanguageType, PresentationConfig } from "../type";
 import { useEffect, useRef, useState } from "react";
 import {

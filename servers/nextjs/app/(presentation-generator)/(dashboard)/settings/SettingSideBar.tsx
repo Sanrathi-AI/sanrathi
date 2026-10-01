@@ -1,3 +1,4 @@
+// Modified by Sanrathi, 2026
 import React from 'react'
 import { LogOut, Search, Shield, ShieldCheck } from 'lucide-react'
 import { IMAGE_PROVIDERS, LLM_PROVIDERS } from '@/utils/providerConstants'

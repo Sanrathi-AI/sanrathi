@@ -1,4 +1,5 @@
 "use client";
+// Modified by Sanrathi, 2026
 
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import Image from "next/image";

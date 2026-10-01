@@ -1,3 +1,4 @@
+// Modified by Sanrathi, 2026
 import { ArrowRight, PartyPopper } from 'lucide-react'
 import { usePathname, useRouter } from 'next/navigation'
 import React, { useCallback, useEffect, useState } from 'react'

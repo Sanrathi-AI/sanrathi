@@ -1,3 +1,4 @@
+// Modified by Sanrathi, 2026
 import React, { forwardRef, memo, useCallback } from "react";
 import type { Slide } from "../../types/slide";
 import { useNearViewport } from "@/app/hooks/useNearViewport";

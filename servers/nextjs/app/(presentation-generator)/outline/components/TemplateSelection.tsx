@@ -1,4 +1,5 @@
 "use client";
+// Modified by Sanrathi, 2026
 
 import React, { memo, useEffect } from "react";
 import CreateCustomTemplate from "../../(dashboard)/templates/components/CreateCustomTemplate";

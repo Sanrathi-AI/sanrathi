@@ -1,3 +1,4 @@
+// Modified by Sanrathi, 2026
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { Slide } from '../../types/slide';

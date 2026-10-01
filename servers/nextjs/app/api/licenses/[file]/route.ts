@@ -1,3 +1,4 @@
+// Modified by Sanrathi, 2026
 // Added by Sanrathi, 2026: serves the Apache 2.0 LICENSE and the NOTICE file
 // (third-party attributions) as plain text for the Open-source licenses page.
 import { readFile } from "fs/promises";

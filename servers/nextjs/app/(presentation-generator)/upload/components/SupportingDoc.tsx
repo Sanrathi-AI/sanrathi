@@ -1,4 +1,5 @@
 "use client";
+// Modified by Sanrathi, 2026
 
 import type { ChangeEvent, DragEvent } from "react";
 import { ArrowUp, File, Paperclip, X } from "lucide-react";

@@ -1,3 +1,4 @@
+// Modified by Sanrathi, 2026
 import type { CSSProperties } from "react";
 
 const baseFont =

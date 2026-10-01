@@ -1,4 +1,5 @@
 "use client";
+// Modified by Sanrathi, 2026
 
 import { useCallback, useEffect, useRef } from "react";
 import type { Box } from "@/components/slide-editor/model/model";

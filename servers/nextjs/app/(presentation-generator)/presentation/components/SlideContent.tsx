@@ -1,3 +1,4 @@
+// Modified by Sanrathi, 2026
 import React, { memo } from "react";
 import Image from "next/image";
 import { Loader2 } from "lucide-react";
