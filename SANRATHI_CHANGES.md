@@ -27,10 +27,14 @@ of upstream (see section 10 of the build guide, "Staying up to date").
    `template.json`). They are shown first in both the API's template order
    (`servers/fastapi/constants/presentation.py`) and the create-presentation
    picker's client-side order (`useTemplateSummaries.ts`).
-4. **Compliance**: a new `/licenses` page shows the Presenton attribution,
+4. **Watermark**: a permanent "Sanrathi.SM" mark baked into every layout of
+   `sanrathi-paper` and `sanrathi-ink` (`sanrathi/add_template_watermark.py`),
+   on top of the export-time stamp in `gateway/watermark.py` from the build
+   guide.
+5. **Compliance**: a new `/licenses` page shows the Presenton attribution,
    the AI model's license, font licenses, and links to the full `LICENSE`
    and `NOTICE` text (new API route `app/api/licenses/[file]/route.ts`).
-5. **Bug fixes found while testing the fork end-to-end** (not Sanrathi
+6. **Bug fixes found while testing the fork end-to-end** (not Sanrathi
    features — genuine issues in how this version behaves with
    `CAN_CHANGE_KEYS=false`, the setting the guide uses to lock the Slide
    Maker down):
@@ -48,10 +52,10 @@ of upstream (see section 10 of the build guide, "Staying up to date").
      so a `.env` change (for example turning on Pixabay images) silently
      reverted after a restart, because the stale database row kept winning
      over the freshly `.env`-derived file.
-6. **Gateway** (`gateway/`, new, not part of Presenton): the Sanrathi
+7. **Gateway** (`gateway/`, new, not part of Presenton): the Sanrathi
    backend's watermark stamper and the `/v1/slides/*` router that turns a
    topic or a lecture transcript into a Slide Maker job.
-7. **Tooling** (`sanrathi/`, new, not part of Presenton): the scripts used to
+8. **Tooling** (`sanrathi/`, new, not part of Presenton): the scripts used to
    make and verify the above (brand finder, recolour, template maker,
    placeholder logo generator, this change-marking script, and the Linux
    Ollama/firewall setup script).
@@ -198,6 +202,8 @@ gateway/                          Sanrathi backend <-> Slide Maker bridge
 sanrathi/                         helper scripts referenced above
 templates/sanrathi-paper/         new template, cloned from templates/general
 templates/sanrathi-ink/           new template, cloned from templates/general
+templates/sanrathi-paper/static/sanrathi-watermark-mark.png   new (watermark mark)
+templates/sanrathi-ink/static/sanrathi-watermark-mark.png     new (watermark mark)
 servers/nextjs/app/api/licenses/[file]/route.ts
 servers/nextjs/app/(presentation-generator)/(dashboard)/licenses/page.tsx
 SANRATHI_CHANGES.md               this file
