@@ -7,7 +7,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from models.sql.provider_settings import ProviderSettings
 from utils.datetime_utils import get_current_utc_datetime
 from utils.db_utils import get_database_url_and_connect_args, to_sync_sqlalchemy_url
-from utils.get_env import get_user_config_path_env
+from utils.get_env import get_can_change_keys_env, get_user_config_path_env
 from utils.user_config_store import read_user_config_file, update_user_config_file
 
 
@@ -101,20 +101,36 @@ def _mirror_to_legacy_file(config: dict[str, Any]) -> None:
 
 
 async def migrate_provider_settings_from_file(session: AsyncSession) -> dict[str, Any]:
-    """One-time startup import, followed by DB-to-file compatibility syncing."""
+    """Startup import, followed by DB-to-file compatibility syncing.
+
+    Modified by Sanrathi, 2026: with CAN_CHANGE_KEYS=false there is no UI path
+    to edit provider settings, so start.js's setupUserConfigFromEnv() rewrites
+    userConfig.json from .env on every boot, before FastAPI starts. Previously
+    this function only imported that file into the database on the *first*
+    boot (when no row existed yet); on every later boot it did the opposite,
+    overwriting the freshly-written file with whatever was already in the
+    database. That made a later .env change (for example turning images on)
+    silently revert after a restart, because the stale DB row kept winning.
+    In lockdown mode the file (= .env) is the administrator's only way to set
+    this, so it must stay authoritative on every boot, not just the first.
+    """
     row = await session.get(ProviderSettings, PROVIDER_SETTINGS_ID)
     path = get_user_config_path_env()
+    locked_down = get_can_change_keys_env() == "false"
 
-    if row is None:
+    if row is None or locked_down:
         legacy_config = read_user_config_file(path) if path else {}
-        row = ProviderSettings(
-            id=PROVIDER_SETTINGS_ID,
-            config=sanitize_provider_settings(legacy_config),
-        )
-        session.add(row)
-        await session.commit()
-        await session.refresh(row)
-        logger.info("Migrated provider settings from userConfig.json into the database.")
+        sanitized = sanitize_provider_settings(legacy_config)
+        if row is None:
+            row = ProviderSettings(id=PROVIDER_SETTINGS_ID, config=sanitized)
+            session.add(row)
+            await session.commit()
+            await session.refresh(row)
+            logger.info("Migrated provider settings from userConfig.json into the database.")
+        elif sanitized != row.config:
+            row.config = sanitized
+            row.updated_at = get_current_utc_datetime()
+            await session.commit()
     else:
         sanitized = sanitize_provider_settings(dict(row.config or {}))
         if sanitized != row.config:
