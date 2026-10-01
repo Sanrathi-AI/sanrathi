@@ -133,7 +133,7 @@ export function TemplateEditorHeader({
           {canEdit ? (
             <Edit3
               aria-hidden="true"
-              className="h-[15px] w-[15px] shrink-0 text-[#9B9B9B] transition-colors group-hover:text-[#7C51F8] group-focus-within:text-[#7C51F8]"
+              className="h-[15px] w-[15px] shrink-0 text-[#9B9B9B] transition-colors group-hover:text-[#0C0C0B] group-focus-within:text-[#0C0C0B]"
             />
           ) : null}
         </label>

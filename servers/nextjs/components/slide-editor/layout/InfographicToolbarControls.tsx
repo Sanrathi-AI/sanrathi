@@ -305,7 +305,7 @@ function InlineNumberInput({
             commit(nextDraft);
           }
         }}
-        className="h-6 w-[58px] rounded-md border border-[#EDEEEF] bg-white px-1.5 text-right text-[12px] text-[#191919] outline-none focus:border-[#7C51F8]"
+        className="h-6 w-[58px] rounded-md border border-[#EDEEEF] bg-white px-1.5 text-right text-[12px] text-[#191919] outline-none focus:border-[#0C0C0B]"
       />
     </label>
   );

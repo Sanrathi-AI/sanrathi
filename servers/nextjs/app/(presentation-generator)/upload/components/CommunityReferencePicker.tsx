@@ -97,7 +97,7 @@ export default function CommunityReferencePicker({
             <button
               type="button"
               onClick={() => onSelect(null)}
-              className="whitespace-nowrap text-xs font-medium text-[#7A5AF8] hover:text-[#6938EF]"
+              className="whitespace-nowrap text-xs font-medium text-[#0C0C0B] hover:text-[#6938EF]"
             >
               Clear selection
             </button>
@@ -106,7 +106,7 @@ export default function CommunityReferencePicker({
       </div>
 
       {loading ? (
-        <div className="flex h-52 items-center justify-center text-[#7A5AF8]">
+        <div className="flex h-52 items-center justify-center text-[#0C0C0B]">
           <Loader2 className="h-5 w-5 animate-spin" />
         </div>
       ) : error ? (
@@ -147,7 +147,7 @@ export default function CommunityReferencePicker({
                 key={item.id}
                 className={`min-w-0 overflow-hidden rounded-xl border bg-white transition ${
                   selected
-                    ? "border-[#7A5AF8] ring-2 ring-[#7A5AF8]/15"
+                    ? "border-[#0C0C0B] ring-2 ring-[#0C0C0B]/15"
                     : "border-[#EDEEEF] hover:border-[#D8D3FA]"
                 }`}
               >
@@ -181,7 +181,7 @@ export default function CommunityReferencePicker({
                       onClick={() => onSelect(selected ? null : item)}
                       className="flex h-[26px] items-center gap-1.5 rounded-full border border-[#EDEEEF] bg-white px-3 font-syne text-xs font-medium text-[#191919] hover:bg-[#F6F6F9]"
                     >
-                      {selected && <Check className="h-3.5 w-3.5 text-[#7A5AF8]" />}
+                      {selected && <Check className="h-3.5 w-3.5 text-[#0C0C0B]" />}
                       {selected ? "Selected" : "Use"}
                     </button>
                   </div>

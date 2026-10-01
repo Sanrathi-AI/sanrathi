@@ -408,7 +408,7 @@ function CommunityPresentationCard({
       <button
         type="button"
         onClick={onPreview}
-        className="group block aspect-[306/169] w-full overflow-hidden bg-[#F8FBFB] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#7A5AF8]/35"
+        className="group block aspect-[306/169] w-full overflow-hidden bg-[#F8FBFB] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#0C0C0B]/35"
         aria-label={`Preview ${title}`}
       >
         {thumbnail ? (

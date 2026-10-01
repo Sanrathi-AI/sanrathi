@@ -338,7 +338,7 @@ type ElementAlignmentDragState = {
   targets: AlignmentSnapTargets;
 };
 
-const ALIGNMENT_GUIDE_COLOR = "#7A5AF8";
+const ALIGNMENT_GUIDE_COLOR = "#0C0C0B";
 const ALIGNMENT_GUIDE_HALO_COLOR = "rgba(255, 255, 255, 0.72)";
 const ALIGNMENT_GUIDE_SNAP_DISTANCE_PX = 8;
 const ALIGNMENT_GUIDE_STROKE_WIDTH_PX = 1.25;
@@ -3185,7 +3185,7 @@ function TemplateV2KonvaSlideComponent({
       ) ? (
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute z-20 border-2 border-[#7C51F8]"
+          className="pointer-events-none absolute z-20 border-2 border-[#0C0C0B]"
           style={{
             left: infographicCanvasSelection.target.box.x,
             top: infographicCanvasSelection.target.box.y,

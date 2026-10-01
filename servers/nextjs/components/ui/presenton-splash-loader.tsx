@@ -91,7 +91,7 @@ export function PresentonSplashLoader({
     width: "142vmax",
     height: "142vmax",
     borderRadius: "50%",
-    background: "#7a5af8",
+    background: "#0C0C0B",
     transform: "translate3d(-50%, -50%, 0) scale(0.001)",
     animation: `presenton-splash-surface-grow ${SPLASH_ANIMATION_MS}ms linear ${animationDelayMs}ms both`,
     willChange: "transform",
@@ -142,7 +142,7 @@ export function PresentonSplashLoader({
           className="presenton-splash-wordmark-layer presenton-splash-wordmark-base"
           style={{
             ...wordmarkLayerStyle,
-            background: "#7a5af8",
+            background: "#0C0C0B",
           }}
         />
         <span

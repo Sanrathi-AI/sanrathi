@@ -156,7 +156,7 @@ export const PresentationCard = ({
 
           {isUnsupported ? (
             <div className="flex flex-col items-center gap-2 px-5 text-center text-[#666666]">
-              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#F4F3FF] text-[#7A5AF8]">
+              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#F4FFD6] text-[#0C0C0B]">
                 <Archive className="h-[18px] w-[18px]" aria-hidden="true" />
               </span>
               <p className="text-xs font-medium">Preview unavailable</p>
@@ -288,7 +288,7 @@ export const PresentationCard = ({
               type="button"
               onClick={() => setShowDeleteDialog(false)}
               disabled={isDeleting}
-              className="h-11 rounded-[10px] border border-[#D0D5DD] bg-white px-4 text-sm font-medium text-[#344054] shadow-sm transition-colors hover:bg-[#F9FAFB] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7A5AF8]/30 disabled:cursor-not-allowed disabled:opacity-50"
+              className="h-11 rounded-[10px] border border-[#D0D5DD] bg-white px-4 text-sm font-medium text-[#344054] shadow-sm transition-colors hover:bg-[#F9FAFB] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0C0C0B]/30 disabled:cursor-not-allowed disabled:opacity-50"
             >
               Cancel
             </button>

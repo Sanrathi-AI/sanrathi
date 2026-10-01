@@ -611,7 +611,7 @@ const PresentationHeader = ({
                 className={cn(
                   "hidden h-[38px] items-center gap-2 rounded-xl border px-3 font-syne text-xs font-semibold shadow-sm transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#6D5DFB] focus-visible:ring-offset-2 xl:inline-flex",
                   enableHtmlSelector
-                    ? "border-[#CEC6FF] bg-[#F3F0FF] text-[#5141E5]"
+                    ? "border-[#CEC6FF] bg-[#F4FFD6] text-[#5141E5]"
                     : "border-[#E4E4E8] bg-white text-[#3D3D48] hover:border-[#D7D2F5] hover:bg-[#FAF9FF] hover:text-[#5141E5]"
                 )}
               >
@@ -709,7 +709,7 @@ const PresentationHeader = ({
               aria-expanded={shortcutsDialogOpen}
               aria-keyshortcuts="?"
               data-testid="keyboard-shortcuts-btn"
-              className="inline-flex h-[38px] w-[38px] items-center justify-center rounded-full border border-[#EDECEC] bg-[#F6F6F9] text-[#101323] transition-colors hover:border-[#D8D3FE] hover:bg-[#F0EDFF] hover:text-[#6847F4] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7A5AF8] focus-visible:ring-offset-2"
+              className="inline-flex h-[38px] w-[38px] items-center justify-center rounded-full border border-[#EDECEC] bg-[#F6F6F9] text-[#101323] transition-colors hover:border-[#D8D3FE] hover:bg-[#F0EDFF] hover:text-[#6847F4] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0C0C0B] focus-visible:ring-offset-2"
               onClick={() => setShortcutsDialogOpen(true)}
             >
               <Keyboard

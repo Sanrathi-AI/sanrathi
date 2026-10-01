@@ -80,7 +80,7 @@ export function InfographicPlainTextEditor({
         flexDirection: "column",
         justifyContent,
         overflow: "visible",
-        outline: "1px solid #7C51F8",
+        outline: "1px solid #0C0C0B",
         outlineOffset: 2,
         background: "transparent",
         pointerEvents: "auto",

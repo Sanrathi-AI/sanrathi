@@ -192,7 +192,7 @@ const VERTICAL_RESIZE_ANCHORS = new Set<ComponentTransformAnchor>([
 ]);
 const VECTOR_VERTEX_HANDLE_RADIUS = 5;
 const VECTOR_VERTEX_HANDLE_STROKE_WIDTH = 2;
-const VECTOR_VERTEX_HANDLE_COLOR = "#7A5AF8";
+const VECTOR_VERTEX_HANDLE_COLOR = "#0C0C0B";
 const VECTOR_VERTEX_HANDLE_HIT_RADIUS = 14;
 const VECTOR_ADD_HANDLE_RADIUS = 6;
 const VECTOR_DELETE_HANDLE_RADIUS = 5;
@@ -4674,7 +4674,7 @@ function InfographicItemGroup({
           <Circle
             radius={8}
             fill="#FFFFFF"
-            stroke="#7C51F8"
+            stroke="#0C0C0B"
             strokeWidth={1}
             shadowColor="rgba(0,0,0,0.14)"
             shadowBlur={2}
@@ -4682,14 +4682,14 @@ function InfographicItemGroup({
           />
           <Line
             points={[-3, 0, 3, 0]}
-            stroke="#7C51F8"
+            stroke="#0C0C0B"
             strokeWidth={1.3}
             lineCap="round"
             listening={false}
           />
           <Line
             points={[0, -3, 0, 3]}
-            stroke="#7C51F8"
+            stroke="#0C0C0B"
             strokeWidth={1.3}
             lineCap="round"
             listening={false}

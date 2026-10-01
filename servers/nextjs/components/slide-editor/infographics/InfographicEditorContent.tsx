@@ -241,7 +241,7 @@ export function InfographicDataEditorContent({
                       Applied to items in order
                     </p>
                   </div>
-                  <Layers3 size={14} className="text-[#7C51F8]" />
+                  <Layers3 size={14} className="text-[#0C0C0B]" />
                 </div>
                 <ColorEditor
                   colors={colors}
@@ -273,7 +273,7 @@ export function InfographicDataEditorContent({
               </div>
 
               <div className="mt-3 flex gap-2 rounded-lg border border-[#ECECF1] bg-[#F8F8FA] p-3 text-[10px] leading-4 text-[#686873]">
-                <Palette size={14} className="mt-0.5 shrink-0 text-[#7C51F8]" />
+                <Palette size={14} className="mt-0.5 shrink-0 text-[#0C0C0B]" />
                 <span>The slide background remains visible behind the infographic.</span>
               </div>
             </aside>
@@ -490,7 +490,7 @@ function ColorEditor({
       </div>
       <button
         type="button"
-        className="mt-2 inline-flex h-8 w-full items-center justify-center gap-1.5 rounded-lg border border-dashed border-[#B8A3F8] bg-white text-[10px] font-medium text-[#7C51F8] outline-none transition hover:bg-[#F8F5FF] focus-visible:ring-2 focus-visible:ring-[#D8CEFA]"
+        className="mt-2 inline-flex h-8 w-full items-center justify-center gap-1.5 rounded-lg border border-dashed border-[#B8A3F8] bg-white text-[10px] font-medium text-[#0C0C0B] outline-none transition hover:bg-[#F8F5FF] focus-visible:ring-2 focus-visible:ring-[#D8CEFA]"
         onClick={() => onChange(appendInfographicColor(colors))}
       >
         <Plus size={13} />
@@ -659,7 +659,7 @@ function GanttEditor({
               className="rounded-xl border border-[#E5E6EB] bg-[#FAFAFC] p-2.5"
             >
               <div className="mb-2 flex items-center justify-between gap-2">
-                <span className="grid size-6 place-items-center rounded-md bg-[#F1ECFF] text-[10px] font-semibold text-[#7C51F8]">
+                <span className="grid size-6 place-items-center rounded-md bg-[#F1ECFF] text-[10px] font-semibold text-[#0C0C0B]">
                   {index + 1}
                 </span>
                 <div className="flex items-center gap-0.5">
@@ -755,7 +755,7 @@ function GanttEditor({
                       )
                     }
                   >
-                    <span className="grid size-7 shrink-0 place-items-center rounded-lg bg-[#F1ECFF] text-[11px] font-semibold text-[#7C51F8]">
+                    <span className="grid size-7 shrink-0 place-items-center rounded-lg bg-[#F1ECFF] text-[11px] font-semibold text-[#0C0C0B]">
                       {rowIndex + 1}
                     </span>
                     <span className="min-w-0 flex-1">
@@ -902,7 +902,7 @@ function GanttTaskEditor({
     <div className="overflow-hidden rounded-xl border border-[#E3E4E9] bg-[#FAFAFC]">
       <div className="flex items-center justify-between border-b border-[#EAEBEF] px-3 py-2.5">
         <div className="flex items-center gap-2">
-          <span className="grid size-6 place-items-center rounded-md bg-white text-[10px] font-semibold text-[#7C51F8]">
+          <span className="grid size-6 place-items-center rounded-md bg-white text-[10px] font-semibold text-[#0C0C0B]">
             {taskIndex + 1}
           </span>
           <span className="text-[11px] font-semibold text-[#555560]">
@@ -972,7 +972,7 @@ function GanttTaskRangePreview({
       </div>
       <div className="relative h-2 overflow-hidden rounded-full bg-[#ECEEF3]">
         <span
-          className="absolute inset-y-0 rounded-full bg-[#7C51F8]"
+          className="absolute inset-y-0 rounded-full bg-[#0C0C0B]"
           style={{ left: `${left}%`, width: `${Math.min(100 - left, width)}%` }}
         />
       </div>
@@ -996,7 +996,7 @@ function GanttPositionEditor({
     <div className="rounded-xl border border-[#E5E6EB] bg-white p-3">
       <div className="mb-2 flex items-center justify-between gap-2">
         <span className="text-[11px] font-semibold text-[#555560]">{label}</span>
-        <span className="rounded-full bg-[#F1ECFF] px-2 py-0.5 text-[9px] font-semibold text-[#7C51F8]">
+        <span className="rounded-full bg-[#F1ECFF] px-2 py-0.5 text-[9px] font-semibold text-[#0C0C0B]">
           {Math.round(offset * 100)}%
         </span>
       </div>
@@ -1428,7 +1428,7 @@ function BeforeAfterEditor({
                     className="flex min-w-0 flex-1 items-center gap-2.5 rounded-lg text-left outline-none focus-visible:ring-2 focus-visible:ring-[#D8CEFA]"
                     onClick={() => setExpandedRow((current) => current === rowIndex ? null : rowIndex)}
                   >
-                    <span className="grid size-7 shrink-0 place-items-center rounded-lg bg-[#F1ECFF] text-[11px] font-semibold text-[#7C51F8]">
+                    <span className="grid size-7 shrink-0 place-items-center rounded-lg bg-[#F1ECFF] text-[11px] font-semibold text-[#0C0C0B]">
                       {rowIndex + 1}
                     </span>
                     <span className="min-w-0 flex-1">
@@ -1478,7 +1478,7 @@ function BeforeAfterEditor({
                                 <span className="grid size-11 place-items-center rounded-xl bg-[#506FBE]">
                                   <InfographicIconPreview color={icon.color} url={icon.url} />
                                 </span>
-                                <span className="text-[9px] font-semibold text-[#7C51F8]">Change icon</span>
+                                <span className="text-[9px] font-semibold text-[#0C0C0B]">Change icon</span>
                               </button>
                               <div className="mt-2">
                                 <DeferredColorInput
@@ -1500,7 +1500,7 @@ function BeforeAfterEditor({
                               <LabeledField className="mt-2" label="Description">
                                 <textarea
                                   aria-label={`${sideLabel} row ${rowIndex + 1} description`}
-                                  className="min-h-[72px] w-full resize-y rounded-lg border border-[#E6E6EA] bg-white px-3 py-2 text-[12px] leading-5 text-[#191919] outline-none focus:border-[#7C51F8]"
+                                  className="min-h-[72px] w-full resize-y rounded-lg border border-[#E6E6EA] bg-white px-3 py-2 text-[12px] leading-5 text-[#191919] outline-none focus:border-[#0C0C0B]"
                                   maxLength={280}
                                   value={item.description ?? ""}
                                   onChange={(event) => updatePairItem(rowIndex, sideIndex as 0 | 1, { description: event.target.value })}
@@ -1944,7 +1944,7 @@ function ItemCollectionEditor<T extends TimelineInfographicItem>({
                       )
                     }
                   >
-                    <span className="grid size-7 shrink-0 place-items-center rounded-lg bg-[#F1ECFF] text-[10px] font-semibold text-[#7C51F8]">
+                    <span className="grid size-7 shrink-0 place-items-center rounded-lg bg-[#F1ECFF] text-[10px] font-semibold text-[#0C0C0B]">
                       {index + 1}
                     </span>
                     <span className="min-w-0 flex-1">
@@ -2008,7 +2008,7 @@ function ItemCollectionEditor<T extends TimelineInfographicItem>({
                               url={icon.url}
                             />
                           </span>
-                          <span className="text-[10px] font-medium text-[#7C51F8]">
+                          <span className="text-[10px] font-medium text-[#0C0C0B]">
                             Change icon
                           </span>
                         </button>
@@ -2083,7 +2083,7 @@ function ItemCollectionEditor<T extends TimelineInfographicItem>({
                         <LabeledField className="mt-3" label="Description">
                           <textarea
                             aria-label={`${capitalize(itemLabel)} ${index + 1} description`}
-                            className="min-h-[82px] w-full resize-y rounded-lg border border-[#E6E6EA] bg-white px-3 py-2 text-[12px] leading-5 text-[#191919] outline-none transition focus:border-[#7C51F8]"
+                            className="min-h-[82px] w-full resize-y rounded-lg border border-[#E6E6EA] bg-white px-3 py-2 text-[12px] leading-5 text-[#191919] outline-none transition focus:border-[#0C0C0B]"
                             maxLength={280}
                             value={item.description ?? ""}
                             onChange={(event) =>
@@ -2231,7 +2231,7 @@ function LabeledField({
 }
 
 const inputClassName =
-  "h-9 w-full rounded-lg border border-[#E6E6EA] bg-white px-3 text-[12px] text-[#191919] outline-none transition focus:border-[#7C51F8]";
+  "h-9 w-full rounded-lg border border-[#E6E6EA] bg-white px-3 text-[12px] text-[#191919] outline-none transition focus:border-[#0C0C0B]";
 
 function TextInput({
   ariaLabel,
