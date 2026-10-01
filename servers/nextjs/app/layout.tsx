@@ -6,10 +6,10 @@ import MixpanelInitializer from "./MixpanelInitializer";
 import { Toaster } from "@/components/ui/sonner";
 import TailwindBrowserRuntime from "@/components/runtime/TailwindBrowserRuntime";
 export const metadata: Metadata = {
-  metadataBase: new URL("https://presenton.ai"),
-  title: "Presenton - Open Source AI presentation generator",
+  metadataBase: new URL("https://sanrathi.com"),
+  title: "Sanrathi Slide Maker",
   description:
-    "Open-source AI presentation generator with custom layouts, multi-model support (OpenAI, Gemini, Ollama), and PDF/PPTX export. A free Gamma alternative.",
+    "Make classroom slides from a topic or a recorded lecture.",
   keywords: [
     "AI presentation generator",
     "data storytelling",
@@ -21,31 +21,31 @@ export const metadata: Metadata = {
     "professional slides",
   ],
   openGraph: {
-    title: "Presenton - Open Source AI presentation generator",
+    title: "Sanrathi Slide Maker",
     description:
-      "Open-source AI presentation generator with custom layouts, multi-model support (OpenAI, Gemini, Ollama), and PDF/PPTX export. A free Gamma alternative.",
-    url: "https://presenton.ai",
-    siteName: "Presenton",
+      "Make classroom slides from a topic or a recorded lecture.",
+    url: "https://sanrathi.com",
+    siteName: "Sanrathi",
     images: [
       {
-        url: "https://presenton.ai/presenton-feature-graphics.png",
+        url: "/logo-with-bg.png",
         width: 1200,
         height: 630,
-        alt: "Presenton Logo",
+        alt: "Sanrathi logo",
       },
     ],
     type: "website",
     locale: "en_US",
   },
   alternates: {
-    canonical: "https://presenton.ai",
+    canonical: "https://sanrathi.com",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Presenton - Open Source AI presentation generator",
+    title: "Sanrathi Slide Maker",
     description:
-      "Open-source AI presentation generator with custom layouts, multi-model support (OpenAI, Gemini, Ollama), and PDF/PPTX export. A free Gamma alternative.",
-    images: ["https://presenton.ai/presenton-feature-graphics.png"],
+      "Make classroom slides from a topic or a recorded lecture.",
+    images: ["/logo-with-bg.png"],
   },
 };
 

@@ -23,7 +23,7 @@ import {
 } from "@/components/ui/dialog";
 
 const LEGACY_RELEASE_URL =
-  "https://presenton.ai/download";
+  "https://sanrathi.com";
 
 const formatLegacyDate = (value: string) => {
   const date = new Date(value);

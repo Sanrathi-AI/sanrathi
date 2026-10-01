@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { LayoutDashboard, Star, Brain, Settings, HelpCircle, UsersRound } from "lucide-react";
+import { LayoutDashboard, Star, Brain, Settings, HelpCircle, UsersRound, Scale } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
@@ -41,7 +41,7 @@ const DashboardSidebar = ({
 
                 <Link href={`/dashboard`} className="flex items-center  pb-6 border-b border-[#E1E1E5]   gap-2    ">
                     <div className="bg-[#0C0C0B] rounded-full cursor-pointer p-1 flex justify-center items-center mx-auto">
-                        <img src="/logo-with-bg.png" alt="Presenton logo" className="h-[40px] object-contain w-full" />
+                        <img src="/logo-with-bg.png" alt="Sanrathi logo" className="h-[40px] object-contain w-full" />
                     </div>
                 </Link>
                 <nav className="pt-6 font-syne" aria-label="Dashboard sections">
@@ -101,12 +101,20 @@ const DashboardSidebar = ({
                 </Link>
                 <div className="py-2"/>
                 <Link
-                    href="https://docs.presenton.ai/help"
+                    href="https://sanrathi.com"
                     target="_blank"
                     className="flex flex-col items-center gap-2 transition-colors"
                 >
                     <HelpCircle className="h-4 w-4" />
                     <span className="text-[11px] text-slate-800">Help</span>
+                </Link>
+                <div className="py-2"/>
+                <Link
+                    href="/licenses"
+                    className="flex flex-col items-center gap-2 transition-colors"
+                >
+                    <Scale className="h-4 w-4" />
+                    <span className="text-[11px] text-slate-800">Licenses</span>
                 </Link>
             </div>
 

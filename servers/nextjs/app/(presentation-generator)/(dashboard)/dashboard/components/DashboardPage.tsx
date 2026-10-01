@@ -26,9 +26,7 @@ import { notify } from "@/components/ui/sonner";
 import { sanitizeAnalyticsError } from "@/utils/analytics";
 import { IMAGE_PROVIDERS, LLM_PROVIDERS } from "@/utils/providerConstants";
 
-const GITHUB_REPOSITORY_URL = "https://github.com/presenton/presenton";
-const DISCORD_INVITE_URL = "https://discord.com/invite/9ZsKKxudNE";
-const APP_UPDATE_URL = "https://presenton.ai/download";
+const APP_UPDATE_URL = "https://sanrathi.com";
 
 const actionCardBase =
   "absolute aspect-[16/9] h-[46.238px] w-[82.201px] rounded-[4.474px] border border-white/50 bg-cover bg-center bg-no-repeat shadow-[0_8px_18px_rgba(16,24,40,0.18)] transition-all duration-500 ease-out opacity-100 translate-y-0 scale-100";
@@ -295,56 +293,6 @@ function DashboardHeader() {
               </span>
             </Link>
 
-            <DashboardHeaderDivider />
-
-            <Link
-              href={DISCORD_INVITE_URL}
-              target="_blank"
-              rel="noreferrer"
-              className={`${dashboardHeaderPill} h-[29.6px] gap-[8.8px] p-1.5`}
-              onClick={() =>
-                trackEvent(MixpanelEvent.Navigation, {
-                  from: pathname,
-                  to: DISCORD_INVITE_URL,
-                  source: "dashboard_header_discord",
-                })
-              }
-            >
-              <Image
-                src={dashboardHeaderAsset("discord.svg")}
-                alt=""
-                aria-hidden="true"
-                width={18}
-                height={18}
-                className="h-[17.6px] w-[17.6px] shrink-0"
-              />
-              <span className="font-syne text-sm font-normal leading-normal tracking-[-0.14px] text-[#191919]">
-                Join Discord
-              </span>
-            </Link>
-            <DashboardHeaderDivider />
-            <Link
-              href={GITHUB_REPOSITORY_URL}
-              target="_blank"
-              rel="noreferrer"
-              className={`${dashboardHeaderPill} h-[29.6px] gap-[8.8px] p-1.5`}
-              onClick={() =>
-                trackEvent(MixpanelEvent.Navigation, {
-                  from: pathname,
-                  to: GITHUB_REPOSITORY_URL,
-                  source: "dashboard_header_github",
-                })
-              }
-            >
-              <Image
-                src={dashboardHeaderAsset("github.svg")}
-                alt=""
-                aria-hidden="true"
-                width={18}
-                height={18}
-                className="h-[17.6px] w-[17.6px] shrink-0"
-              />
-            </Link>
           </div>
 
           {isElectronApp && (
@@ -352,8 +300,8 @@ function DashboardHeader() {
               href={APP_UPDATE_URL}
               target="_blank"
               rel="noreferrer"
-              aria-label="Update Presenton"
-              title="Update Presenton"
+              aria-label="Update Sanrathi Slide Maker"
+              title="Update Sanrathi Slide Maker"
               className="relative flex h-[42.24px] w-[42.24px] shrink-0 items-center justify-center rounded-full border-[1.32px] border-[#D9D9D2] bg-[#FAFAF7] transition-colors hover:bg-[#F4FFD6] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0C0C0B] focus-visible:ring-offset-2"
               onClick={() =>
                 trackEvent(MixpanelEvent.Navigation, {

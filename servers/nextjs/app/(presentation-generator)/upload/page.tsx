@@ -7,11 +7,11 @@ import { normalizePresentationGenerationMode } from "@/utils/presentationGenerat
 import { isCommunityEnabled } from "@/utils/community";
 
 export const metadata: Metadata = {
-  title: "Presenton | Open Source AI presentation generator",
+  title: "Sanrathi Slide Maker | Create slides",
   description:
-    "Open-source AI presentation generator with custom layouts, multi-model support (OpenAI, Gemini, Ollama), and PDF/PPTX export. A free Gamma alternative.",
+    "Make classroom slides from a topic or a recorded lecture.",
   alternates: {
-    canonical: "https://presenton.ai/create",
+    canonical: "https://sanrathi.com/create",
   },
   keywords: [
     "presentation generator",
@@ -26,20 +26,18 @@ export const metadata: Metadata = {
     "business presentations",
   ],
   openGraph: {
-    title: "Create Data Presentation | PresentOn",
+    title: "Create Slides | Sanrathi Slide Maker",
     description:
-      "Open-source AI presentation generator with custom layouts, multi-model support (OpenAI, Gemini, Ollama), and PDF/PPTX export. A free Gamma alternative.",
+      "Make classroom slides from a topic or a recorded lecture.",
     type: "website",
-    url: "https://presenton.ai/create",
-    siteName: "PresentOn",
+    url: "https://sanrathi.com/create",
+    siteName: "Sanrathi",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Create Data Presentation | PresentOn",
+    title: "Create Slides | Sanrathi Slide Maker",
     description:
-      "Open-source AI presentation generator with custom layouts, multi-model support (OpenAI, Gemini, Ollama), and PDF/PPTX export. A free Gamma alternative.",
-    site: "@presenton_ai",
-    creator: "@presenton_ai",
+      "Make classroom slides from a topic or a recorded lecture.",
   },
 };
 

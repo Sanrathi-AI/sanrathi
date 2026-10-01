@@ -1101,7 +1101,7 @@ const PresentonMode = ({
                     {providerStep === 1
                         ? "Use your Presenton account, or configure your own AI providers."
                         : providerStep === 2
-                            ? "Choose how Presenton creates visuals, or continue without image generation."
+                            ? "Choose how Sanrathi Slide Maker creates visuals, or continue without image generation."
                             : "Add current web context to presentations, or continue with web search disabled."}
                 </p>
             </div>
