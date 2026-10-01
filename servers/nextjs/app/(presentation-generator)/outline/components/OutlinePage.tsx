@@ -441,7 +441,7 @@ const OutlinePage: React.FC = () => {
                 aria-label="Outline tools"
               >
                 <div className="flex w-full flex-col items-center rounded-[10px] bg-[#F4FFD6]/60 py-7">
-                  <div className="flex rounded-[10px] border border-[#EDEEEF] bg-white p-1.5 shadow-[0_6.6px_6.6px_rgba(124,81,248,0.14)]">
+                  <div className="flex rounded-[10px] border border-[#EDEEEF] bg-white p-1.5 shadow-[0_6.6px_6.6px_rgba(12,12,11,0.14)]">
                     <Image
                       src="/ai-star.svg"
                       alt=""

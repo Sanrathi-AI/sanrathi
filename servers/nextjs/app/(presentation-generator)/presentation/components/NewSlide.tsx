@@ -114,7 +114,7 @@ const LayoutItem = memo(({ layout, onSelect }: LayoutItemProps) => {
         event.preventDefault();
         selectLayout();
       }}
-      className="relative aspect-video cursor-pointer overflow-hidden rounded-md border border-[#E4E4EA] bg-white shadow-[0_1px_2px_rgba(16,24,40,0.04)] outline-none transition duration-200 hover:border-[#0C0C0B] hover:shadow-[0_0_0_2px_rgba(124,81,248,0.18)] focus-visible:ring-2 focus-visible:ring-[#0C0C0B]"
+      className="relative aspect-video cursor-pointer overflow-hidden rounded-md border border-[#E4E4EA] bg-white shadow-[0_1px_2px_rgba(16,24,40,0.04)] outline-none transition duration-200 hover:border-[#0C0C0B] hover:shadow-[0_0_0_2px_rgba(12,12,11,0.18)] focus-visible:ring-2 focus-visible:ring-[#0C0C0B]"
     >
       <div className="absolute inset-0 z-40 bg-transparent" />
       <div ref={previewRef} className="relative h-full w-full overflow-hidden">

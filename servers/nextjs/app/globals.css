@@ -654,7 +654,7 @@ thead {
   width: 76%;
   height: 54%;
   border-radius: 9999px;
-  background: #f2e1fb;
+  background: #F4FFD6;
   filter: blur(10px);
   opacity: 0.95;
   transform-origin: center;
@@ -709,12 +709,12 @@ thead {
   aspect-ratio: 2;
   --_g-left: no-repeat radial-gradient(
     circle closest-side,
-    rgb(122 90 248 / 20%) 90%,
+    rgb(12 12 11 / 20%) 90%,
     transparent
   );
   --_g-center: no-repeat radial-gradient(
     circle closest-side,
-    rgb(122 90 248 / 60%) 90%,
+    rgb(12 12 11 / 60%) 90%,
     transparent
   );
   --_g-right: no-repeat radial-gradient(

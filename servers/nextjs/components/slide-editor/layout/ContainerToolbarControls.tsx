@@ -129,7 +129,7 @@ function CompactNumberInput({
       <span className="font-manrope text-[12px] font-medium leading-6 text-[#191919]">
         {label}
       </span>
-      <span className="flex h-9 min-w-[140px] items-center rounded-[10px] border border-[#DDDEE4] bg-white px-3 text-[12px] text-[#191919] focus-within:border-[#6A52E2]">
+      <span className="flex h-9 min-w-[140px] items-center rounded-[10px] border border-[#DDDEE4] bg-white px-3 text-[12px] text-[#191919] focus-within:border-[#0C0C0B]">
         {marker ? (
           <span className="mr-3 flex h-5 min-w-5 items-center justify-center rounded-md border border-[#B7BAC6] bg-[#F7F8FB] px-1 text-[11px] font-semibold leading-none text-[#727584]">
             {marker}
@@ -464,7 +464,7 @@ export function TemplateV2ContainerToolbarControls({
                       <span
                         className={cn(
                           "h-2.5 w-2.5 rounded-full bg-[#C8CBD6]",
-                          selected && "bg-[#6A52E2]",
+                          selected && "bg-[#0C0C0B]",
                         )}
                       />
                     </button>

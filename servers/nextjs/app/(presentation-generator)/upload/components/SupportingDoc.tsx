@@ -125,7 +125,7 @@ export default function SupportingDoc({
           onClick={onSubmit}
           disabled={disabled}
           aria-label="Generate presentation"
-          className="flex h-9 w-9 items-center justify-center rounded-full bg-[#0C0C0B] text-white shadow-sm transition hover:bg-[#6938EF] disabled:cursor-not-allowed disabled:opacity-50"
+          className="flex h-9 w-9 items-center justify-center rounded-full bg-[#0C0C0B] text-white shadow-sm transition hover:bg-[#0C0C0B] disabled:cursor-not-allowed disabled:opacity-50"
         >
           <ArrowUp className="h-4 w-4" strokeWidth={2} />
         </button>

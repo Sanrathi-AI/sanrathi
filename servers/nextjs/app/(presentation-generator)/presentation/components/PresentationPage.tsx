@@ -883,7 +883,7 @@ const PresentationPage: React.FC<PresentationPageProps> = ({
                 style={{ left: "50%", transform: "translateX(-50%)" }}
               >
                 <Keyboard
-                  className="h-4 w-4 text-[#6847F4]"
+                  className="h-4 w-4 text-[#0C0C0B]"
                   aria-hidden="true"
                 />
                 <span>Navigate with</span>
@@ -963,7 +963,7 @@ const PresentationPage: React.FC<PresentationPageProps> = ({
             className="fixed bottom-5 right-5 z-40 inline-flex h-11 items-center gap-2 rounded-full border border-white/70 px-4 text-sm font-semibold text-[#101323] shadow-[0_8px_24px_rgba(74,58,155,0.24)] transition hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0C0C0B] focus-visible:ring-offset-2 xl:hidden"
             style={{
               background:
-                "linear-gradient(270deg, #D5CAFC 2.4%, #E3D2EB 27.88%, #F4DCD3 69.23%, #FDE4C2 100%)",
+                "linear-gradient(270deg, #D9D9D2 2.4%, #D9D9D2 27.88%, #F4DCD3 69.23%, #FDE4C2 100%)",
             }}
           >
             <Sparkles className="h-4 w-4 text-[#0C0C0B]" aria-hidden="true" />
@@ -998,7 +998,7 @@ const PresentationPage: React.FC<PresentationPageProps> = ({
                 type="button"
                 aria-label="Close tools panel"
                 onClick={() => setIsRightPanelOpen(false)}
-                className="absolute -left-[10px] top-1/2 z-[80] hidden h-[36px] w-[16px] -translate-y-1/2 items-center justify-center rounded-full border-2 border-[#E8E5FF] bg-[#FEFEFF] text-[#6938EF] shadow-[0_10px_26px_rgba(52,48,96,0.10)] transition-[border-color,box-shadow,color] hover:border-[#D9D9D2] hover:text-[#5925DC] hover:shadow-[0_12px_30px_rgba(52,48,96,0.16)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0C0C0B] focus-visible:ring-offset-2 xl:flex"
+                className="absolute -left-[10px] top-1/2 z-[80] hidden h-[36px] w-[16px] -translate-y-1/2 items-center justify-center rounded-full border-2 border-[#E8E5FF] bg-[#FEFEFF] text-[#0C0C0B] shadow-[0_10px_26px_rgba(52,48,96,0.10)] transition-[border-color,box-shadow,color] hover:border-[#D9D9D2] hover:text-[#5925DC] hover:shadow-[0_12px_30px_rgba(52,48,96,0.16)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0C0C0B] focus-visible:ring-offset-2 xl:flex"
               >
                 <ChevronRight
                   className="h-4 w-4"

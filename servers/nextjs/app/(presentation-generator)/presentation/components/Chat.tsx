@@ -222,10 +222,10 @@ const ContextTags = ({
         <span
           key={tag.id}
           className={cn(
-            "inline-flex h-7 min-w-0 items-center gap-1 rounded-full border pl-2.5 font-manrope text-[11px] font-semibold text-[#6941C6]",
+            "inline-flex h-7 min-w-0 items-center gap-1 rounded-full border pl-2.5 font-manrope text-[11px] font-semibold text-[#0C0C0B]",
             tag.id === "slide"
               ? "max-w-[86px] shrink-0 border-[#E8E3FF] bg-[#F8F6FF] shadow-[0_1px_2px_rgba(105,65,198,0.06)]"
-              : "max-w-[138px] border-[#DDD6FE] bg-[#F5F3FF] shadow-[0_1px_2px_rgba(105,65,198,0.08)]",
+              : "max-w-[138px] border-[#D9D9D2] bg-[#F5F3FF] shadow-[0_1px_2px_rgba(105,65,198,0.08)]",
             tag.onRemove ? "pr-1" : "pr-2.5",
           )}
           title={tag.title || tag.label}
@@ -361,7 +361,7 @@ const ConversationControls = ({
             type="button"
             onClick={onNewChat}
             disabled={isBusy}
-            className="inline-flex h-7 items-center gap-1 rounded-full bg-[#F4FFD6] px-2.5 font-manrope text-[11px] font-semibold text-[#6941C6] transition-colors hover:bg-[#EBE9FE] disabled:cursor-not-allowed disabled:opacity-50"
+            className="inline-flex h-7 items-center gap-1 rounded-full bg-[#F4FFD6] px-2.5 font-manrope text-[11px] font-semibold text-[#0C0C0B] transition-colors hover:bg-[#F4FFD6] disabled:cursor-not-allowed disabled:opacity-50"
           >
             <Plus className="h-3 w-3" />
             New
@@ -387,7 +387,7 @@ const ConversationControls = ({
                   className={cn(
                     "group flex items-center rounded-[8px] border transition-colors",
                     isActive
-                      ? "border-[#DDD6FE] bg-[#F5F3FF]"
+                      ? "border-[#D9D9D2] bg-[#F5F3FF]"
                       : "border-transparent hover:bg-[#F8F8FA]",
                   )}
                 >
@@ -402,7 +402,7 @@ const ConversationControls = ({
                     <span
                       className={cn(
                         "block truncate font-manrope text-[11px] font-semibold leading-4",
-                        isActive ? "text-[#6941C6]" : "text-[#344054]",
+                        isActive ? "text-[#0C0C0B]" : "text-[#344054]",
                       )}
                     >
                       {getConversationTitle(conversation)}
@@ -2751,7 +2751,7 @@ const Chat = ({
                   className="flex h-8 w-10 shrink-0 items-center justify-center rounded-full text-[#191919] transition-opacity disabled:cursor-not-allowed"
                   style={{
                     background: input.trim()
-                      ? "linear-gradient(270deg, #D5CAFC 2.4%, #E3D2EB 27.88%, #F4DCD3 69.23%, #FDE4C2 100%)"
+                      ? "linear-gradient(270deg, #D9D9D2 2.4%, #D9D9D2 27.88%, #F4DCD3 69.23%, #FDE4C2 100%)"
                       : "#EDEEEF",
                   }}
                   aria-label="Send prompt"
@@ -2818,7 +2818,7 @@ const Chat = ({
               AI Assistant
             </h4>
             {isSending && (
-              <span className="inline-flex items-center gap-1 rounded-full bg-[#F4FFD6] px-2 py-0.5 text-[10px] font-medium text-[#6941C6]">
+              <span className="inline-flex items-center gap-1 rounded-full bg-[#F4FFD6] px-2 py-0.5 text-[10px] font-medium text-[#0C0C0B]">
                 <Loader2 className="h-2.5 w-2.5 animate-spin" />
                 Live
               </span>
@@ -2984,7 +2984,7 @@ const Chat = ({
                         ariaLabel="Context sent with prompt"
                       />
                     ) : null}
-                    <div className="w-fit max-w-full rounded-[18px] bg-[#7C3AED] px-4 py-3 text-[13px] font-medium leading-5 text-white shadow-sm [overflow-wrap:anywhere] [word-break:break-word]">
+                    <div className="w-fit max-w-full rounded-[18px] bg-[#0C0C0B] px-4 py-3 text-[13px] font-medium leading-5 text-white shadow-sm [overflow-wrap:anywhere] [word-break:break-word]">
                       <p className="whitespace-pre-wrap">
                         {stripBackendContextFromUserMessage(message.content)}
                       </p>
@@ -3370,7 +3370,7 @@ const Chat = ({
                 className="flex h-[34px] w-[34px] items-center justify-center rounded-full text-[#191919] transition-opacity disabled:cursor-not-allowed disabled:opacity-60"
                 style={{
                   background:
-                    "linear-gradient(270deg, #D5CAFC 2.4%, #E3D2EB 27.88%, #F4DCD3 69.23%, #FDE4C2 100%)",
+                    "linear-gradient(270deg, #D9D9D2 2.4%, #D9D9D2 27.88%, #F4DCD3 69.23%, #FDE4C2 100%)",
                 }}
                 aria-label="Send prompt"
               >

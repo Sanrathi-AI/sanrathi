@@ -91,7 +91,7 @@ export function TemplateEditorHeader({
           className={cn(
             "group flex h-[38px] min-w-0 flex-1 items-center gap-[8px] rounded-[10px] border border-transparent px-[9px] transition-colors sm:max-w-[255px]",
             canEdit
-              ? "cursor-text hover:border-[#EDEEEF] hover:bg-[#FAFAFB] focus-within:border-[#B99CFF] focus-within:bg-white focus-within:shadow-[0_0_0_3px_rgba(124,81,248,0.10)]"
+              ? "cursor-text hover:border-[#EDEEEF] hover:bg-[#FAFAFB] focus-within:border-[#B99CFF] focus-within:bg-white focus-within:shadow-[0_0_0_3px_rgba(12,12,11,0.10)]"
               : "cursor-default",
           )}
           title={canEdit ? "Edit template name" : "Default template"}

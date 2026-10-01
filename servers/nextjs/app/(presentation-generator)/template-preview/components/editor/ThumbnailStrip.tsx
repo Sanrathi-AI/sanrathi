@@ -57,7 +57,7 @@ const SlideThumbnail = memo(function SlideThumbnail({
         className={cn(
           "absolute -left-2 bottom-[18px] z-10 flex h-[24.394px] w-[24.394px] items-center justify-center rounded-full border bg-white text-[12px] font-medium shadow-sm",
           active
-            ? "border-[#0C0C0B] bg-[#0C0C0B] text-white shadow-[0_3px_8px_rgba(122,90,248,0.32)]"
+            ? "border-[#0C0C0B] bg-[#0C0C0B] text-white shadow-[0_3px_8px_rgba(12,12,11,0.32)]"
             : "border-[#ECECEC] text-[#191919]",
         )}
       >
@@ -68,7 +68,7 @@ const SlideThumbnail = memo(function SlideThumbnail({
         className={cn(
           "block overflow-hidden rounded-[9.68px] border bg-white transition-all",
           active
-            ? "border-[#0C0C0B] shadow-[0_0_0_2px_#D9D9D2,0_6px_14px_rgba(122,90,248,0.22)]"
+            ? "border-[#0C0C0B] shadow-[0_0_0_2px_#D9D9D2,0_6px_14px_rgba(12,12,11,0.22)]"
             : "border-[#E7E7E7] group-hover:border-[#CFCFCF]",
         )}
         style={{

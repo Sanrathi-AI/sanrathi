@@ -393,7 +393,7 @@ const NavButton = ({
           active && "border-[#EDEEEF] bg-white",
         )}
         style={{
-          boxShadow: active ? "0 6.6px 13.2px 0 rgba(124, 81, 248, 0.14)" : "",
+          boxShadow: active ? "0 6.6px 13.2px 0 rgba(12, 12, 11, 0.14)" : "",
         }}
       >
         <img
@@ -432,7 +432,7 @@ const PaletteCard = ({
     disabled={disabled}
     onClick={onClick}
     className={cn(
-      "group min-w-0 overflow-hidden rounded-[10px] border border-[#EDEEF0] bg-white text-left shadow-sm transition hover:-translate-y-0.5 hover:border-[#B9A8FA] hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0C0C0B]/40",
+      "group min-w-0 overflow-hidden rounded-[10px] border border-[#EDEEF0] bg-white text-left shadow-sm transition hover:-translate-y-0.5 hover:border-[#D9D9D2] hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0C0C0B]/40",
       disabled &&
         "cursor-not-allowed opacity-50 hover:translate-y-0 hover:border-[#EDEEF0] hover:shadow-sm",
     )}
@@ -897,7 +897,7 @@ function BlockVariantButton({
       data-block-variant
       disabled={disabled}
       className={cn(
-        "template-block-variant group relative w-full overflow-hidden rounded-[12px] border border-[#E5E7EB] bg-[#F9FAFB] p-2 text-left transition hover:border-[#D6BBFB] hover:bg-[#FAF9FF] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0C0C0B]/40",
+        "template-block-variant group relative w-full overflow-hidden rounded-[12px] border border-[#E5E7EB] bg-[#F9FAFB] p-2 text-left transition hover:border-[#D9D9D2] hover:bg-[#FAF9FF] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0C0C0B]/40",
         disabled && "cursor-not-allowed opacity-50 hover:border-[#E5E7EB] hover:bg-[#F9FAFB]",
       )}
       onClick={() => {
@@ -980,7 +980,7 @@ function BlockGroupCard({
           aria-expanded={expanded}
           onClick={toggleExpanded}
         >
-          <span className="shrink-0 rounded-full border border-[#D6BBFB] bg-[#FAF8FF] px-3 py-1.5 text-[11px] font-medium leading-4 text-[#7F00FF]">
+          <span className="shrink-0 rounded-full border border-[#D9D9D2] bg-[#FAF8FF] px-3 py-1.5 text-[11px] font-medium leading-4 text-[#7F00FF]">
             {variantCount} Layouts
           </span>
           <ChevronDown
@@ -1112,7 +1112,7 @@ export const BlocksPanel = ({
           className="flex h-[clamp(32px,2.5vw,36px)] w-[clamp(32px,2.5vw,36px)] shrink-0 items-center justify-center rounded-full disabled:cursor-not-allowed disabled:opacity-50"
           style={{
             background:
-              "linear-gradient(270deg, #D5CAFC 2.4%, #E3D2EB 35%, #FDE4C2 100%)",
+              "linear-gradient(270deg, #D9D9D2 2.4%, #D9D9D2 35%, #FDE4C2 100%)",
           }}
           aria-label="Create block"
         >
@@ -1188,7 +1188,7 @@ function PrimaryActionButton({
           active ? "border-[#EDEEEF] bg-white" : ""
         }`}
         style={{
-          boxShadow: active ? "0 6.6px 13.2px 0 rgba(124, 81, 248, 0.14)" : "",
+          boxShadow: active ? "0 6.6px 13.2px 0 rgba(12, 12, 11, 0.14)" : "",
         }}
       >
         <img

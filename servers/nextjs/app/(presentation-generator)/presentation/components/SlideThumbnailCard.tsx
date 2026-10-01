@@ -81,7 +81,7 @@ const SlideThumbnailCardComponent = forwardRef<
         <div
           className={`relative h-[62px] w-[110px] shrink-0 overflow-hidden rounded-[4px] bg-white transition-[border-color,box-shadow] duration-200 ${
             selected
-              ? "border-2 border-[#0C0C0B] shadow-[0_0_0_3px_rgba(122,90,248,0.16)]"
+              ? "border-2 border-[#0C0C0B] shadow-[0_0_0_3px_rgba(12,12,11,0.16)]"
               : "border border-[#EDEEEF]"
           }`}
         >

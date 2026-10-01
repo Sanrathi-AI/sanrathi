@@ -29,7 +29,7 @@ export default function UserAccountSettings({
             >
               <div className="flex h-[18px] w-[18px] items-center justify-center rounded-full border border-[#EDEEEF] bg-white">
                 <UserRound
-                  className="h-3 w-3 text-[#5146E5]"
+                  className="h-3 w-3 text-[#0C0C0B]"
                   aria-hidden="true"
                 />
               </div>
@@ -63,7 +63,7 @@ export default function UserAccountSettings({
               <div className="flex items-center gap-4">
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[4px] bg-[#F4FFD6]">
                   <UserRound
-                    className="h-5 w-5 text-[#5146E5]"
+                    className="h-5 w-5 text-[#0C0C0B]"
                     aria-hidden="true"
                   />
                 </div>
@@ -86,7 +86,7 @@ export default function UserAccountSettings({
                 </p>
                 <LogoutButton
                   label="Sign out"
-                  className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-[58px] border border-[#EDEEEF] bg-[#0C0C0B] px-5 py-3 text-xs font-semibold text-white transition hover:bg-[#6d46e6] disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
+                  className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-[58px] border border-[#EDEEEF] bg-[#0C0C0B] px-5 py-3 text-xs font-semibold text-white transition hover:bg-[#0C0C0B] disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
                 />
               </div>
             </div>

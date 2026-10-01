@@ -658,7 +658,7 @@ export function ImageToolbar({
             onClick={() => togglePanel("crop")}
             className={cn(
               "rounded-[2px] border-0 bg-transparent p-1 text-[#05070A] hover:bg-[#F4FFD6]",
-              openPanel === "crop" && "bg-[#F4F1FF] text-[#7C3AED]",
+              openPanel === "crop" && "bg-[#F4F1FF] text-[#0C0C0B]",
             )}
           >
             <Crop size={16} strokeWidth={1.7} aria-hidden="true" />
@@ -672,7 +672,7 @@ export function ImageToolbar({
             onClick={() => update({ flip_h: !(element.flip_h ?? false) })}
             className={cn(
               "rounded-[2px] border-0 bg-transparent p-1 text-[#05070A] hover:bg-[#F4FFD6]",
-              element.flip_h === true && "bg-[#F4F1FF] text-[#7C3AED]",
+              element.flip_h === true && "bg-[#F4F1FF] text-[#0C0C0B]",
             )}
           >
             <FlipHorizontal2 size={16} strokeWidth={1.7} aria-hidden="true" />
@@ -686,7 +686,7 @@ export function ImageToolbar({
             onClick={() => update({ flip_v: !(element.flip_v ?? false) })}
             className={cn(
               "rounded-[2px] border-0 bg-transparent p-1 text-[#05070A] hover:bg-[#F4FFD6]",
-              element.flip_v === true && "bg-[#F4F1FF] text-[#7C3AED]",
+              element.flip_v === true && "bg-[#F4F1FF] text-[#0C0C0B]",
             )}
           >
             <FlipVertical2 size={16} strokeWidth={1.7} aria-hidden="true" />
@@ -701,7 +701,7 @@ export function ImageToolbar({
               onClick={() => togglePanel("radius")}
               className={cn(
                 "rounded-[2px] border-0 bg-transparent p-1 text-[#05070A] hover:bg-[#F4FFD6]",
-                openPanel === "radius" && "bg-[#F4F1FF] text-[#7C3AED]",
+                openPanel === "radius" && "bg-[#F4F1FF] text-[#0C0C0B]",
               )}
             >
               <Scan size={16} strokeWidth={1.7} aria-hidden="true" />
@@ -752,7 +752,7 @@ export function ImageToolbar({
             onClick={() => togglePanel("opacity")}
             className={cn(
               "rounded-[2px] border-0 bg-transparent p-1 text-[#05070A] hover:bg-[#F4FFD6]",
-              openPanel === "opacity" && "bg-[#F4F1FF] text-[#7C3AED]",
+              openPanel === "opacity" && "bg-[#F4F1FF] text-[#0C0C0B]",
             )}
           >
             <OpacitySwatchIcon />
@@ -923,7 +923,7 @@ function CropOverlay({
       {imageSource ? (
         <div
           aria-label={cropLabel}
-          className="pointer-events-auto absolute z-[2] cursor-grab touch-none select-none focus:outline-none focus-visible:ring-2 focus-visible:ring-[#7C3AED] focus-visible:ring-offset-2"
+          className="pointer-events-auto absolute z-[2] cursor-grab touch-none select-none focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0C0C0B] focus-visible:ring-offset-2"
           style={{
             height: imageFrame.height,
             left: imageFrame.left,
@@ -950,12 +950,12 @@ function CropOverlay({
               transform: transform || undefined,
             }}
           />
-          <div className="pointer-events-none absolute inset-0 border-2 border-[#7C3AED]" />
+          <div className="pointer-events-none absolute inset-0 border-2 border-[#0C0C0B]" />
         </div>
       ) : null}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute z-[4] border-2 border-[#7C3AED] shadow-[0_0_0_1px_rgba(255,255,255,0.85)]"
+        className="pointer-events-none absolute z-[4] border-2 border-[#0C0C0B] shadow-[0_0_0_1px_rgba(255,255,255,0.85)]"
         style={{
           borderRadius,
           height: frame.height,
@@ -971,7 +971,7 @@ function CropOverlay({
             type="button"
             title={handle.label}
             aria-label={handle.label}
-            className="pointer-events-auto absolute z-[5] rounded-full border border-[#D6D3E8] bg-white shadow-[0_1px_4px_rgba(17,24,39,0.24)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#7C3AED]"
+            className="pointer-events-auto absolute z-[5] rounded-full border border-[#D6D3E8] bg-white shadow-[0_1px_4px_rgba(17,24,39,0.24)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0C0C0B]"
             style={cropHandleStyle(handle.value, imageFrame)}
             onPointerCancel={(event) => onPointerCancel(event)}
             onPointerDown={(event) => onHandlePointerDown(handle.value, event)}

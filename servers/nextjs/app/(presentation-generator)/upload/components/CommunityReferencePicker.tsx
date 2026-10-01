@@ -97,7 +97,7 @@ export default function CommunityReferencePicker({
             <button
               type="button"
               onClick={() => onSelect(null)}
-              className="whitespace-nowrap text-xs font-medium text-[#0C0C0B] hover:text-[#6938EF]"
+              className="whitespace-nowrap text-xs font-medium text-[#0C0C0B] hover:text-[#0C0C0B]"
             >
               Clear selection
             </button>
@@ -124,7 +124,7 @@ export default function CommunityReferencePicker({
             <button
               type="button"
               onClick={() => load()}
-              className="mt-4 inline-flex items-center gap-2 rounded-full border border-[#E0DDFC] bg-white px-4 py-2 text-xs font-medium text-[#6847F4] transition hover:bg-[#F8F7FF]"
+              className="mt-4 inline-flex items-center gap-2 rounded-full border border-[#F4FFD6] bg-white px-4 py-2 text-xs font-medium text-[#0C0C0B] transition hover:bg-[#F8F7FF]"
             >
               <RefreshCw className="h-4 w-4" /> Try again
             </button>
@@ -148,7 +148,7 @@ export default function CommunityReferencePicker({
                 className={`min-w-0 overflow-hidden rounded-xl border bg-white transition ${
                   selected
                     ? "border-[#0C0C0B] ring-2 ring-[#0C0C0B]/15"
-                    : "border-[#EDEEEF] hover:border-[#D8D3FA]"
+                    : "border-[#EDEEEF] hover:border-[#D9D9D2]"
                 }`}
               >
                 <button

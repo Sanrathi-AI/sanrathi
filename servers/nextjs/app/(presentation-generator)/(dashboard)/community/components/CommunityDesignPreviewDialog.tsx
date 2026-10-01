@@ -174,7 +174,7 @@ export default function CommunityDesignPreviewDialog({
                     <button
                       type="button"
                       onClick={handleBackToCommunity}
-                      className="mb-1 inline-flex items-center gap-1 text-xs text-[#6847F4] transition hover:text-[#5137C8] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0C0C0B]/30"
+                      className="mb-1 inline-flex items-center gap-1 text-xs text-[#0C0C0B] transition hover:text-[#5137C8] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0C0C0B]/30"
                     >
                       <ArrowLeft aria-hidden="true" className="h-3.5 w-3.5" />
                       Community preview
@@ -185,7 +185,7 @@ export default function CommunityDesignPreviewDialog({
                       {title}
                     </DialogTitle>
                     {loading && (
-                      <LoaderCircle className="h-4 w-4 shrink-0 animate-spin text-[#6847F4]" />
+                      <LoaderCircle className="h-4 w-4 shrink-0 animate-spin text-[#0C0C0B]" />
                     )}
                   </div>
                   <DialogDescription className="mt-1 line-clamp-2 text-sm font-normal leading-normal tracking-[-0.14px] text-[#808080]">
@@ -301,7 +301,7 @@ export default function CommunityDesignPreviewDialog({
                                     : `Preview reference presentation ${referenceId}`
                                 }
                                 aria-pressed={isActiveReference}
-                                className="inline-flex min-w-0 max-w-full items-center gap-1 rounded-[10px] border border-[#D9D9D2] bg-[#FAFAF7] px-2.5 py-0.5 text-xs font-normal text-[#4C4C4C] transition-colors hover:border-[#BDB4FD] hover:text-[#6847F4] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0C0C0B]/30 disabled:cursor-wait disabled:opacity-60"
+                                className="inline-flex min-w-0 max-w-full items-center gap-1 rounded-[10px] border border-[#D9D9D2] bg-[#FAFAF7] px-2.5 py-0.5 text-xs font-normal text-[#4C4C4C] transition-colors hover:border-[#BDB4FD] hover:text-[#0C0C0B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0C0C0B]/30 disabled:cursor-wait disabled:opacity-60"
                               >
                                 <span className="min-w-0 truncate font-mono text-[10px]">
                                   {referenceId}

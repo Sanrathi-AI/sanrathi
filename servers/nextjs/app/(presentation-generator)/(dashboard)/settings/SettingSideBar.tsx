@@ -33,7 +33,7 @@ const SettingSideBar = ({ selectedProvider, setSelectedProvider, presentonSelect
                             </button>
                             <button className={` w-full rounded-[6px] px-3 py-4 flex items-center gap-1.5 border  ${selectedProvider === 'web-search-provider' ? 'bg-[#F4FFD6] border-[#D9D9D2]' : 'bg-white border-[#EDEEEF]'}`} onClick={() => setSelectedProvider('web-search-provider')}>
                                 <div className='relative w-[18px] h-[18px] rounded-full overflow-hidden border border-[#EDEEEF] flex items-center justify-center bg-white'>
-                                    <Search className='w-3 h-3 text-[#5146E5]' />
+                                    <Search className='w-3 h-3 text-[#0C0C0B]' />
                                 </div>
                                 <p className='text-[#191919] text-xs font-medium'>Web Search Provider</p>
                             </button>
@@ -50,7 +50,7 @@ const SettingSideBar = ({ selectedProvider, setSelectedProvider, presentonSelect
                         onClick={() => setSelectedProvider('privacy')}
                     >
                         <div className='relative w-6 h-6 rounded-full overflow-hidden border border-[#EDEEEF] flex items-center justify-center bg-white'>
-                            <Shield className='w-3.5 h-3.5 text-[#5146E5]' />
+                            <Shield className='w-3.5 h-3.5 text-[#0C0C0B]' />
                         </div>
                         <p className='text-[#191919] text-xs font-medium'>Usage Analytics</p>
                     </button>
@@ -59,7 +59,7 @@ const SettingSideBar = ({ selectedProvider, setSelectedProvider, presentonSelect
                         onClick={() => setSelectedProvider('admin')}
                     >
                         <div className='relative w-6 h-6 rounded-full overflow-hidden border border-[#EDEEEF] flex items-center justify-center bg-white'>
-                            <ShieldCheck className='w-3.5 h-3.5 text-[#5146E5]' />
+                            <ShieldCheck className='w-3.5 h-3.5 text-[#0C0C0B]' />
                         </div>
                         <p className='text-[#191919] text-xs font-medium'>Admin</p>
                     </button>
@@ -68,7 +68,7 @@ const SettingSideBar = ({ selectedProvider, setSelectedProvider, presentonSelect
                         onClick={() => setSelectedProvider('session')}
                     >
                         <div className='relative w-6 h-6 rounded-full overflow-hidden border border-[#EDEEEF] flex items-center justify-center bg-white'>
-                            <LogOut className='w-3.5 h-3.5 text-[#5146E5]' />
+                            <LogOut className='w-3.5 h-3.5 text-[#0C0C0B]' />
                         </div>
                         <p className='text-[#191919] text-xs font-medium'>Sign out</p>
                     </button>

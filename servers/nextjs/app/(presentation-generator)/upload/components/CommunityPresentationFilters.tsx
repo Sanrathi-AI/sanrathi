@@ -183,7 +183,7 @@ export default function CommunityPresentationFilters({
             type="button"
             disabled={disabled}
             className={cn(
-              "inline-flex h-10 items-center gap-2 rounded-full border bg-white px-3 font-manrope text-xs font-medium text-[#191919] transition hover:border-[#D8D3FA] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0C0C0B]/20 disabled:cursor-not-allowed disabled:opacity-50",
+              "inline-flex h-10 items-center gap-2 rounded-full border bg-white px-3 font-manrope text-xs font-medium text-[#191919] transition hover:border-[#D9D9D2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0C0C0B]/20 disabled:cursor-not-allowed disabled:opacity-50",
               activeFilterCount > 0
                 ? "border-[#CFC8FD] bg-[#FAFAF7]"
                 : "border-[#DBDBDB99]"
@@ -280,7 +280,7 @@ export default function CommunityPresentationFilters({
             <button
               type="button"
               onClick={applyFilters}
-              className="h-9 rounded-full bg-[#0C0C0B] px-5 text-xs font-medium text-white transition hover:bg-[#6938EF] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0C0C0B]/30"
+              className="h-9 rounded-full bg-[#0C0C0B] px-5 text-xs font-medium text-white transition hover:bg-[#0C0C0B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0C0C0B]/30"
             >
               Apply
             </button>
@@ -309,7 +309,7 @@ function DateFilter({
         type="date"
         value={value}
         onChange={(event) => onChange(event.target.value)}
-        className="h-9 w-full rounded-lg border border-[#E0E0E3] bg-white px-2 text-[11px] text-[#191919] outline-none transition focus:border-[#BDB4FB] focus:ring-2 focus:ring-[#0C0C0B]/10"
+        className="h-9 w-full rounded-lg border border-[#E0E0E3] bg-white px-2 text-[11px] text-[#191919] outline-none transition focus:border-[#D9D9D2] focus:ring-2 focus:ring-[#0C0C0B]/10"
       />
     </label>
   );
@@ -359,7 +359,7 @@ function CountFilter({
           onChange={(event) => onValueChange(event.target.value)}
           disabled={comparison === "any"}
           placeholder="Count"
-          className="h-9 w-full rounded-lg border border-[#E0E0E3] bg-white px-3 text-xs text-[#191919] outline-none transition placeholder:text-[#A0A0A0] focus:border-[#BDB4FB] focus:ring-2 focus:ring-[#0C0C0B]/10 disabled:bg-[#F7F7F9] disabled:text-[#A0A0A0]"
+          className="h-9 w-full rounded-lg border border-[#E0E0E3] bg-white px-3 text-xs text-[#191919] outline-none transition placeholder:text-[#A0A0A0] focus:border-[#D9D9D2] focus:ring-2 focus:ring-[#0C0C0B]/10 disabled:bg-[#F7F7F9] disabled:text-[#A0A0A0]"
         />
       </div>
     </div>

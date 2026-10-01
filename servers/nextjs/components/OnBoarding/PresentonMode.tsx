@@ -947,7 +947,7 @@ const PresentonMode = ({
 
                 <div className="space-y-4">
                     {selectedWebProvider.value === "auto" && (
-                        <div className="rounded-lg border border-[#D9D9D2] bg-[#F4FFD6] p-3 text-xs leading-5 text-[#5146E5]">
+                        <div className="rounded-lg border border-[#D9D9D2] bg-[#F4FFD6] p-3 text-xs leading-5 text-[#0C0C0B]">
                             Presenton will use model-native web grounding when available. If the selected text model does not support it, web search stays off until you choose an external provider.
                         </div>
                     )}
@@ -1641,7 +1641,7 @@ const PresentonMode = ({
                                                 className={cn(
                                                     "group flex min-h-24 flex-col items-center justify-center gap-2 rounded-[10px] border p-3 text-center transition-all hover:border-[#D9D9D2] hover:bg-[#F7F6F9]",
                                                     llmConfig.IMAGE_PROVIDER === provider.value
-                                                        ? "border-[#0C0C0B] bg-[#F4FFD6] shadow-[0_10px_24px_rgba(122,90,248,0.12)]"
+                                                        ? "border-[#0C0C0B] bg-[#F4FFD6] shadow-[0_10px_24px_rgba(12,12,11,0.12)]"
                                                         : "border-[#EDEEEF] bg-white"
                                                 )}
                                             >
@@ -1692,7 +1692,7 @@ const PresentonMode = ({
                     </ToolTip>
                     <div className="mb-[42px] flex items-center gap-6">
                         <div className='flex h-[74px] w-[74px] items-center justify-center rounded-[4px] bg-[#F4FFD6]'>
-                            <Search className="h-9 w-9 text-[#5146E5]" />
+                            <Search className="h-9 w-9 text-[#0C0C0B]" />
                         </div>
                         <div>
                             <h3 className="text-xl font-normal text-[#191919]">Web Search Settings</h3>
@@ -1723,7 +1723,7 @@ const PresentonMode = ({
                                                     className={cn(
                                                         "group flex min-h-32 flex-col items-center justify-center gap-2 rounded-[10px] border p-3 text-center transition-all hover:border-[#D9D9D2] hover:bg-[#F7F6F9]",
                                                         selectedWebProvider?.value === provider.value
-                                                            ? "border-[#0C0C0B] bg-[#F4FFD6] shadow-[0_10px_24px_rgba(122,90,248,0.12)]"
+                                                            ? "border-[#0C0C0B] bg-[#F4FFD6] shadow-[0_10px_24px_rgba(12,12,11,0.12)]"
                                                             : "border-[#EDEEEF] bg-white"
                                                     )}
                                                 >

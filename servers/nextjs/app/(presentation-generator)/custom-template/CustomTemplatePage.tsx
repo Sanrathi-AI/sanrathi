@@ -85,7 +85,7 @@ const studioSteps: { id: StudioStep; label: string }[] = [
 ];
 
 const pillGradient =
-  "linear-gradient(270deg, #D5CAFC 2.4%, #E3D2EB 27.88%, #F4DCD3 69.23%, #FDE4C2 100%)";
+  "linear-gradient(270deg, #D9D9D2 2.4%, #D9D9D2 27.88%, #F4DCD3 69.23%, #FDE4C2 100%)";
 
 const FONT_FALLBACK_OPTION_HEIGHT = 40;
 const FONT_FALLBACK_MAX_VISIBLE_ROWS = 7;
@@ -366,7 +366,7 @@ function UploadPanel({
         <ul className="mx-auto mt-6 2xl:mt-8 flex max-w-[480px] 2xl:max-w-[600px] items-center justify-between gap-5 2xl:gap-8">
           {["Test in Real Time", "Max 100MB", "5min Generation"].map((item) => (
             <li key={item} className="flex items-center gap-2 2xl:gap-2.5">
-              <span className="h-2.5 w-2.5 2xl:h-3 2xl:w-3 rounded-full bg-[#EBE9FE]" />
+              <span className="h-2.5 w-2.5 2xl:h-3 2xl:w-3 rounded-full bg-[#F4FFD6]" />
               <span className="text-[13px] 2xl:text-[15px] font-normal text-[#3A3A3A]">{item}</span>
             </li>
           ))}
@@ -602,7 +602,7 @@ function FontFallbackPicker({
                     >
                       <span className="min-w-0 truncate">{option.family}</span>
                       {isSelected ? (
-                        <Check className="h-4 w-4 shrink-0 text-[#5146E5]" />
+                        <Check className="h-4 w-4 shrink-0 text-[#0C0C0B]" />
                       ) : (
                         <span className="shrink-0 text-xs font-semibold text-[#8B8E99]">
                           Aa
@@ -1037,7 +1037,7 @@ function GeneratingSlidesOverlay() {
       <span className="relative z-20 flex items-center overflow-hidden rounded-[50px] bg-white px-4 py-2.5 text-sm font-medium text-[#666666] shadow-[0_2px_12px_rgba(16,24,40,0.08)]">
         <span aria-hidden className="generating-slides-background absolute" />
         <span className="relative z-10 flex items-center gap-2">
-          <Sparkles className="h-4 w-4 text-[#9034EA]" />
+          <Sparkles className="h-4 w-4 text-[#0C0C0B]" />
           Updating slides...
         </span>
       </span>
@@ -1490,7 +1490,7 @@ function SaveTemplateModal({
               onChange={(event) => setName(event.target.value)}
               disabled={isSaving}
               placeholder="e.g. Modern Tech Pitch Deck"
-              className="h-9 2xl:h-10 w-full rounded-[5px] border border-[#E1E2E8] bg-white px-3 2xl:px-4 text-[13px] 2xl:text-[15px] text-black outline-none placeholder:text-[#8C8E96] focus:border-[#B9ABFF]"
+              className="h-9 2xl:h-10 w-full rounded-[5px] border border-[#E1E2E8] bg-white px-3 2xl:px-4 text-[13px] 2xl:text-[15px] text-black outline-none placeholder:text-[#8C8E96] focus:border-[#D9D9D2]"
             />
           </label>
           <label className="block">
@@ -1503,7 +1503,7 @@ function SaveTemplateModal({
               disabled={isSaving}
               placeholder="Briefly describe when or how this template should be used."
               rows={4}
-              className="h-[86px] 2xl:h-[100px] w-full resize-none rounded-[5px] border border-[#E1E2E8] bg-white px-3 2xl:px-4 py-3 2xl:py-3.5 text-[13px] 2xl:text-[15px] text-black outline-none placeholder:text-[#8C8E96] focus:border-[#B9ABFF]"
+              className="h-[86px] 2xl:h-[100px] w-full resize-none rounded-[5px] border border-[#E1E2E8] bg-white px-3 2xl:px-4 py-3 2xl:py-3.5 text-[13px] 2xl:text-[15px] text-black outline-none placeholder:text-[#8C8E96] focus:border-[#D9D9D2]"
             />
           </label>
         </div>

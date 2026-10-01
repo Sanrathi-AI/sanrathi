@@ -178,7 +178,7 @@ export const PresentationCard = ({
         <p
           className={`absolute left-2 top-2 z-40 rounded-full px-2.5 py-1 text-[11px] font-semibold capitalize shadow-sm backdrop-blur-sm ${
             presentationType === "smart"
-              ? "bg-[#F4F0FF]/95 text-[#6941C6]"
+              ? "bg-[#F4F0FF]/95 text-[#0C0C0B]"
               : "bg-white/90 text-[#475467]"
           }`}
         >

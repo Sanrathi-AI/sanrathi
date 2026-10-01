@@ -58,7 +58,7 @@ const DashboardSidebar = ({
                             aria-label="Dashboard"
                             title="Dashboard"
                         >
-                            <LayoutDashboard className={["h-4 w-4", pathname === "/dashboard" ? "text-[#5146E5]" : "text-slate-600"].join(" ")} />
+                            <LayoutDashboard className={["h-4 w-4", pathname === "/dashboard" ? "text-[#0C0C0B]" : "text-slate-600"].join(" ")} />
                             <span className="text-[11px] text-slate-800">Dashboard</span>
                         </Link>
                         {showTemplates ? <Link
@@ -72,7 +72,7 @@ const DashboardSidebar = ({
                             title="Templates"
                         >
                             <div className="flex flex-col cursor-pointer tex-center items-center gap-2  transition-colors">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={`${pathname === "/templates" ? "#5146E5" : "#475569"}`} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4"><path d="M4 14h6" /><path d="M4 2h10" /><rect x="4" y="18" width="16" height="4" rx="1" /><rect x="4" y="6" width="16" height="4" rx="1" /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={`${pathname === "/templates" ? "#0C0C0B" : "#475569"}`} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4"><path d="M4 14h6" /><path d="M4 2h10" /><rect x="4" y="18" width="16" height="4" rx="1" /><rect x="4" y="6" width="16" height="4" rx="1" /></svg>
                                 <span className="text-[11px] text-slate-800">Templates</span>
                             </div>
                         </Link> : null}
@@ -83,7 +83,7 @@ const DashboardSidebar = ({
                             aria-label="Community"
                             title="Community"
                         >
-                            <UsersRound className={`h-4 w-4 ${pathname === "/community" ? "text-[#5146E5]" : "text-slate-600"}`} />
+                            <UsersRound className={`h-4 w-4 ${pathname === "/community" ? "text-[#0C0C0B]" : "text-slate-600"}`} />
                             <span className="text-[11px] text-slate-800">Community</span>
                         </Link> : null}
 

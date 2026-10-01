@@ -166,7 +166,7 @@ const BlankPresentationIllustration = ({
 
     {isLoading && (
       <div className="absolute inset-0 flex items-center justify-center bg-[#D1E9FF]/75">
-        <Loader2 className="h-5 w-5 animate-spin text-[#6847F4]" />
+        <Loader2 className="h-5 w-5 animate-spin text-[#0C0C0B]" />
       </div>
     )}
   </div>

@@ -429,7 +429,7 @@ function ColorEditor({
           return (
             <div
               key={`infographic-color-${index}`}
-              className="group flex items-center gap-2 rounded-lg border border-[#E6E6EA] bg-white p-1.5 transition hover:border-[#CDBCFB]"
+              className="group flex items-center gap-2 rounded-lg border border-[#E6E6EA] bg-white p-1.5 transition hover:border-[#D9D9D2]"
             >
               <DeferredColorInput
                 aria-label={
@@ -490,7 +490,7 @@ function ColorEditor({
       </div>
       <button
         type="button"
-        className="mt-2 inline-flex h-8 w-full items-center justify-center gap-1.5 rounded-lg border border-dashed border-[#B8A3F8] bg-white text-[10px] font-medium text-[#0C0C0B] outline-none transition hover:bg-[#F8F5FF] focus-visible:ring-2 focus-visible:ring-[#D8CEFA]"
+        className="mt-2 inline-flex h-8 w-full items-center justify-center gap-1.5 rounded-lg border border-dashed border-[#D9D9D2] bg-white text-[10px] font-medium text-[#0C0C0B] outline-none transition hover:bg-[#F8F5FF] focus-visible:ring-2 focus-visible:ring-[#D9D9D2]"
         onClick={() => onChange(appendInfographicColor(colors))}
       >
         <Plus size={13} />
@@ -659,7 +659,7 @@ function GanttEditor({
               className="rounded-xl border border-[#E5E6EB] bg-[#FAFAFC] p-2.5"
             >
               <div className="mb-2 flex items-center justify-between gap-2">
-                <span className="grid size-6 place-items-center rounded-md bg-[#F1ECFF] text-[10px] font-semibold text-[#0C0C0B]">
+                <span className="grid size-6 place-items-center rounded-md bg-[#F4FFD6] text-[10px] font-semibold text-[#0C0C0B]">
                   {index + 1}
                 </span>
                 <div className="flex items-center gap-0.5">
@@ -748,14 +748,14 @@ function GanttEditor({
                     aria-controls={rowPanelId}
                     aria-expanded={isExpanded}
                     aria-label={`${isExpanded ? "Collapse" : "Expand"} row ${rowIndex + 1}`}
-                    className="flex min-w-0 flex-1 items-center gap-2.5 rounded-lg text-left outline-none focus-visible:ring-2 focus-visible:ring-[#D8CEFA]"
+                    className="flex min-w-0 flex-1 items-center gap-2.5 rounded-lg text-left outline-none focus-visible:ring-2 focus-visible:ring-[#D9D9D2]"
                     onClick={() =>
                       setExpandedRowIndex((current) =>
                         current === rowIndex ? null : rowIndex,
                       )
                     }
                   >
-                    <span className="grid size-7 shrink-0 place-items-center rounded-lg bg-[#F1ECFF] text-[11px] font-semibold text-[#0C0C0B]">
+                    <span className="grid size-7 shrink-0 place-items-center rounded-lg bg-[#F4FFD6] text-[11px] font-semibold text-[#0C0C0B]">
                       {rowIndex + 1}
                     </span>
                     <span className="min-w-0 flex-1">
@@ -996,7 +996,7 @@ function GanttPositionEditor({
     <div className="rounded-xl border border-[#E5E6EB] bg-white p-3">
       <div className="mb-2 flex items-center justify-between gap-2">
         <span className="text-[11px] font-semibold text-[#555560]">{label}</span>
-        <span className="rounded-full bg-[#F1ECFF] px-2 py-0.5 text-[9px] font-semibold text-[#0C0C0B]">
+        <span className="rounded-full bg-[#F4FFD6] px-2 py-0.5 text-[9px] font-semibold text-[#0C0C0B]">
           {Math.round(offset * 100)}%
         </span>
       </div>
@@ -1205,7 +1205,7 @@ function RadialCycleEditor({
       >
         <button
           type="button"
-          className="flex w-full items-center gap-4 rounded-lg border border-[#ECECF1] bg-[#F8F8FA] p-3 text-left outline-none transition hover:border-[#B8A3F8] focus-visible:ring-2 focus-visible:ring-[#D8CEFA]"
+          className="flex w-full items-center gap-4 rounded-lg border border-[#ECECF1] bg-[#F8F8FA] p-3 text-left outline-none transition hover:border-[#D9D9D2] focus-visible:ring-2 focus-visible:ring-[#D9D9D2]"
           onClick={() => setImagePickerOpen(true)}
         >
           <span className="grid size-20 shrink-0 place-items-center overflow-hidden rounded-full bg-[#E9ECF2]">
@@ -1425,10 +1425,10 @@ function BeforeAfterEditor({
                   <button
                     type="button"
                     aria-expanded={expanded}
-                    className="flex min-w-0 flex-1 items-center gap-2.5 rounded-lg text-left outline-none focus-visible:ring-2 focus-visible:ring-[#D8CEFA]"
+                    className="flex min-w-0 flex-1 items-center gap-2.5 rounded-lg text-left outline-none focus-visible:ring-2 focus-visible:ring-[#D9D9D2]"
                     onClick={() => setExpandedRow((current) => current === rowIndex ? null : rowIndex)}
                   >
-                    <span className="grid size-7 shrink-0 place-items-center rounded-lg bg-[#F1ECFF] text-[11px] font-semibold text-[#0C0C0B]">
+                    <span className="grid size-7 shrink-0 place-items-center rounded-lg bg-[#F4FFD6] text-[11px] font-semibold text-[#0C0C0B]">
                       {rowIndex + 1}
                     </span>
                     <span className="min-w-0 flex-1">
@@ -1472,7 +1472,7 @@ function BeforeAfterEditor({
                               <button
                                 type="button"
                                 aria-label={`Change ${sideLabel} row ${rowIndex + 1} icon`}
-                                className="flex w-full flex-col items-center gap-2 rounded-xl border border-[#DFE0E6] bg-white px-2 py-3 outline-none transition hover:border-[#BDAAF8] focus-visible:ring-2 focus-visible:ring-[#D8CEFA]"
+                                className="flex w-full flex-col items-center gap-2 rounded-xl border border-[#DFE0E6] bg-white px-2 py-3 outline-none transition hover:border-[#BDAAF8] focus-visible:ring-2 focus-visible:ring-[#D9D9D2]"
                                 onClick={() => setEditingIconIndex(itemIndex)}
                               >
                                 <span className="grid size-11 place-items-center rounded-xl bg-[#506FBE]">
@@ -1737,7 +1737,7 @@ function ComparisonMatrixEditor({
             return (
               <div key={`comparison-option-${index}`} className="rounded-xl border border-[#ECECF1] bg-white p-4">
                 <div className="mb-4 flex flex-wrap items-end gap-3 border-b border-[#EFEFF3] pb-4">
-                  <button type="button" aria-label={`Change option ${index + 1} icon`} className="grid size-11 place-items-center rounded-lg bg-[#506FBE] outline-none transition hover:brightness-95 focus-visible:ring-2 focus-visible:ring-[#D8CEFA]" onClick={() => setEditingIconIndex(index)}>
+                  <button type="button" aria-label={`Change option ${index + 1} icon`} className="grid size-11 place-items-center rounded-lg bg-[#506FBE] outline-none transition hover:brightness-95 focus-visible:ring-2 focus-visible:ring-[#D9D9D2]" onClick={() => setEditingIconIndex(index)}>
                     <InfographicIconPreview color={icon.color} url={icon.url} />
                   </button>
                   <div className="min-w-[180px] flex-1">
@@ -1927,7 +1927,7 @@ function ItemCollectionEditor<T extends TimelineInfographicItem>({
                   if (node) itemRefs.current.set(index, node);
                   else itemRefs.current.delete(index);
                 }}
-                className={`overflow-hidden rounded-xl border bg-white transition ${isExpanded ? "border-[#CDBCFB]" : "border-[#ECECF1] hover:border-[#DADAE0]"}`}
+                className={`overflow-hidden rounded-xl border bg-white transition ${isExpanded ? "border-[#D9D9D2]" : "border-[#ECECF1] hover:border-[#DADAE0]"}`}
               >
                 <div
                   className={`flex min-h-[56px] items-center justify-between gap-3 px-3 ${isExpanded ? "border-b border-[#ECECF1] bg-[#FAF9FF]" : ""}`}
@@ -1937,14 +1937,14 @@ function ItemCollectionEditor<T extends TimelineInfographicItem>({
                     aria-controls={accordionPanelId}
                     aria-expanded={isExpanded}
                     aria-label={`${isExpanded ? "Collapse" : "Expand"} ${itemLabel} ${index + 1}`}
-                    className="flex min-w-0 flex-1 items-center gap-2.5 rounded-lg py-2 text-left outline-none focus-visible:ring-2 focus-visible:ring-[#D8CEFA]"
+                    className="flex min-w-0 flex-1 items-center gap-2.5 rounded-lg py-2 text-left outline-none focus-visible:ring-2 focus-visible:ring-[#D9D9D2]"
                     onClick={() =>
                       setExpandedIndex((current) =>
                         current === index ? null : index,
                       )
                     }
                   >
-                    <span className="grid size-7 shrink-0 place-items-center rounded-lg bg-[#F1ECFF] text-[10px] font-semibold text-[#0C0C0B]">
+                    <span className="grid size-7 shrink-0 place-items-center rounded-lg bg-[#F4FFD6] text-[10px] font-semibold text-[#0C0C0B]">
                       {index + 1}
                     </span>
                     <span className="min-w-0 flex-1">
@@ -1999,7 +1999,7 @@ function ItemCollectionEditor<T extends TimelineInfographicItem>({
                         <button
                           type="button"
                           aria-label={`Change ${itemLabel} ${index + 1} icon`}
-                          className="group flex w-full flex-col items-center gap-2 rounded-lg border border-[#E6E6EA] bg-[#F8F8FA] px-2 py-3 text-[#686873] outline-none transition hover:border-[#B8A3F8] focus-visible:ring-2 focus-visible:ring-[#D8CEFA]"
+                          className="group flex w-full flex-col items-center gap-2 rounded-lg border border-[#E6E6EA] bg-[#F8F8FA] px-2 py-3 text-[#686873] outline-none transition hover:border-[#D9D9D2] focus-visible:ring-2 focus-visible:ring-[#D9D9D2]"
                           onClick={() => setEditingIconIndex(index)}
                         >
                           <span className="grid size-11 place-items-center rounded-lg bg-[#506FBE]">
@@ -2335,7 +2335,7 @@ function MiniButton({
       aria-label={label}
       title={label}
       disabled={disabled}
-      className="grid h-7 w-7 shrink-0 place-items-center rounded-md text-[#191919] outline-none transition hover:bg-[#F5F5F7] focus-visible:ring-2 focus-visible:ring-[#D8CEFA] disabled:cursor-not-allowed disabled:opacity-25"
+      className="grid h-7 w-7 shrink-0 place-items-center rounded-md text-[#191919] outline-none transition hover:bg-[#F5F5F7] focus-visible:ring-2 focus-visible:ring-[#D9D9D2] disabled:cursor-not-allowed disabled:opacity-25"
       onClick={onClick}
     >
       {children}

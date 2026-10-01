@@ -437,7 +437,7 @@ export default function AuthGate() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full rounded-[58px] border border-[#EDEEEF] bg-[#0C0C0B] px-5 py-3 font-syne text-xs font-semibold text-white transition hover:bg-[#6d46e6] disabled:cursor-not-allowed disabled:opacity-60"
+            className="w-full rounded-[58px] border border-[#EDEEEF] bg-[#0C0C0B] px-5 py-3 font-syne text-xs font-semibold text-white transition hover:bg-[#0C0C0B] disabled:cursor-not-allowed disabled:opacity-60"
           >
             {isSubmitting
               ? isSetupMode

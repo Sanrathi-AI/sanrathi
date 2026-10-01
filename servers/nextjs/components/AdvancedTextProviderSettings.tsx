@@ -356,7 +356,7 @@ export default function AdvancedTextProviderSettings({ config, onChange }: Props
           <button
             type="button"
             onClick={resetToDefaults}
-            className="inline-flex items-center gap-2 rounded-[48px] border border-[#EDEEEF] bg-white px-4 py-2.5 text-xs font-semibold text-[#5146E5] transition hover:bg-[#F4FFD6]"
+            className="inline-flex items-center gap-2 rounded-[48px] border border-[#EDEEEF] bg-white px-4 py-2.5 text-xs font-semibold text-[#0C0C0B] transition hover:bg-[#F4FFD6]"
           >
             <RotateCcw className="h-3.5 w-3.5" aria-hidden="true" />
             Reset to defaults
@@ -471,7 +471,7 @@ export default function AdvancedTextProviderSettings({ config, onChange }: Props
                 type="button"
                 onClick={loadProviders}
                 disabled={providersLoading}
-                className="inline-flex min-w-[112px] items-center justify-center rounded-[48px] border border-[#EDEEEF] bg-[#F4FFD6] px-4 py-2.5 text-xs font-semibold text-[#5146E5] transition hover:bg-[#ECEAFF] disabled:opacity-50"
+                className="inline-flex min-w-[112px] items-center justify-center rounded-[48px] border border-[#EDEEEF] bg-[#F4FFD6] px-4 py-2.5 text-xs font-semibold text-[#0C0C0B] transition hover:bg-[#ECEAFF] disabled:opacity-50"
               >
                 {providersLoading ? (
                   <Loader2 className="h-4 w-4 animate-spin" />
@@ -551,7 +551,7 @@ export default function AdvancedTextProviderSettings({ config, onChange }: Props
               </Popover>
               <button
                 type="button"
-                className="rounded-lg bg-[#0C0C0B] px-5 text-sm font-medium text-white transition hover:bg-[#6941C6] disabled:cursor-not-allowed disabled:bg-[#D0D2D8]"
+                className="rounded-lg bg-[#0C0C0B] px-5 text-sm font-medium text-white transition hover:bg-[#0C0C0B] disabled:cursor-not-allowed disabled:bg-[#D0D2D8]"
                 disabled={!providerToAdd}
                 onClick={() => {
                   if (providerToAdd) {

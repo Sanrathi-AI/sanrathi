@@ -97,7 +97,7 @@ const WebSearchProvider = ({
         <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:gap-10">
           <div className="max-w-[300px] shrink-0 pb-2 lg:pb-[20px]">
             <div className="flex h-[60px] w-[60px] items-center justify-center rounded-[4px] bg-[#F4FFD6]">
-              <Search className="h-7 w-7 text-[#5146E5]" />
+              <Search className="h-7 w-7 text-[#0C0C0B]" />
             </div>
             <h3 className="py-2.5 text-xl font-normal text-[#191919]">
               Web Search Settings
@@ -174,7 +174,7 @@ const WebSearchProvider = ({
                 </div>
 
                 {selected === "auto" && (
-                  <div className="rounded-lg border border-[#D9D9D2] bg-[#F4FFD6] p-3 text-xs text-[#5146E5]">
+                  <div className="rounded-lg border border-[#D9D9D2] bg-[#F4FFD6] p-3 text-xs text-[#0C0C0B]">
                     Model-native web grounding is preferred when available.
                     Otherwise, external search fallback is used.
                   </div>

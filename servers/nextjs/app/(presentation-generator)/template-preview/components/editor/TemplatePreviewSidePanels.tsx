@@ -111,7 +111,7 @@ function ToolRailButton({
         className={cn(
           "flex h-[30px] w-[30px] items-center justify-center rounded-[9px] border border-transparent",
           active &&
-            "border-[#EDEEEF] bg-white shadow-[0_6px_13px_rgba(124,81,248,0.14)]",
+            "border-[#EDEEEF] bg-white shadow-[0_6px_13px_rgba(12,12,11,0.14)]",
         )}
       >
         <Icon className="h-[14px] w-[14px]" />

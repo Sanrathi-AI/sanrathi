@@ -74,10 +74,10 @@ export default function GenerationModeDialog({
                   />
                 </div>
               </div>
-              <div className="rounded-[20px] border border-[#EBE9FE] bg-[#F4FFD6] px-3.5 pb-5 pt-3.5">
-                <div className="flex items-center justify-between border-b border-[#EBE9FE] pb-3.5">
+              <div className="rounded-[20px] border border-[#F4FFD6] bg-[#F4FFD6] px-3.5 pb-5 pt-3.5">
+                <div className="flex items-center justify-between border-b border-[#F4FFD6] pb-3.5">
                   <p className="text-xl font-medium text-[#333333]">Standard</p>
-                  <p className="text-[10px] font-medium text-[#6938EF]">
+                  <p className="text-[10px] font-medium text-[#0C0C0B]">
                     Fixed layout
                   </p>
                 </div>
@@ -87,7 +87,7 @@ export default function GenerationModeDialog({
                 </p>
                 <Button
                   type="button"
-                  className="rounded-[80px] bg-[#0C0C0B] px-5 text-base font-medium text-white shadow-none hover:bg-[#6938EF]/90"
+                  className="rounded-[80px] bg-[#0C0C0B] px-5 text-base font-medium text-white shadow-none hover:bg-[#0C0C0B]/90"
                   onClick={() => selectMode("standard")}
                 >
                   Select Standard
@@ -108,10 +108,10 @@ export default function GenerationModeDialog({
                   />
                 </div>
               </div>
-              <div className="rounded-[20px] border border-[#EBE9FE] bg-[#F4FFD6] px-3.5 pb-5 pt-3.5">
-                <div className="flex items-center justify-between border-b border-[#EBE9FE] pb-3.5">
+              <div className="rounded-[20px] border border-[#F4FFD6] bg-[#F4FFD6] px-3.5 pb-5 pt-3.5">
+                <div className="flex items-center justify-between border-b border-[#F4FFD6] pb-3.5">
                   <p className="text-xl font-medium text-[#333333]">Smart</p>
-                  <p className="text-[10px] font-medium text-[#6938EF]">
+                  <p className="text-[10px] font-medium text-[#0C0C0B]">
                     Flexible layout
                   </p>
                 </div>
@@ -124,7 +124,7 @@ export default function GenerationModeDialog({
                   className="h-auto min-h-10 rounded-[80px] px-5 text-base font-medium text-[#101323] shadow-none"
                   style={{
                     background:
-                      "linear-gradient(270deg, #D5CAFC 2.4%, #E3D2EB 27.88%, #F4DCD3 69.23%, #FDE4C2 100%)",
+                      "linear-gradient(270deg, #D9D9D2 2.4%, #D9D9D2 27.88%, #F4DCD3 69.23%, #FDE4C2 100%)",
                   }}
                   onClick={() => selectMode("smart")}
                 >
