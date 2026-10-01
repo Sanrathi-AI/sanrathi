@@ -9,7 +9,12 @@ import TemplateService, {
 
 export type TemplateTab = "custom" | "default";
 
+// Modified by Sanrathi, 2026: Sanrathi templates first (matched by name, lower-case).
 const FEATURED_BUILT_IN_TEMPLATE_ORDER = [
+  "sanrathi paper",
+  "sanrathi-paper",
+  "sanrathi ink",
+  "sanrathi-ink",
   "momentum",
   "dynamic",
   "executive",
