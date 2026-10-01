@@ -23,6 +23,8 @@ def get_max_outline_words() -> int:
 MAX_OUTLINE_CONTENT_WORDS = get_max_outline_words()
 
 _PREFERRED_TEMPLATE_ORDER = [
+    "sanrathi-paper",
+    "sanrathi-ink",
     "momentum",
     "dynamic",
     "executive",
