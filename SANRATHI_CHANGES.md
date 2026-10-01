@@ -42,6 +42,12 @@ of upstream (see section 10 of the build guide, "Staying up to date").
      (the JWT signing key) to every logged-in user; the redaction pattern in
      `lib/runtime-provider-config.ts` only matched `*_API_KEY`/`PASSWORD`/
      token-shaped field names.
+   - `migrate_provider_settings_from_file` (`services/provider_settings.py`)
+     only imported `userConfig.json` into the database on the *first* boot.
+     On every later boot it mirrored the database back onto the file instead,
+     so a `.env` change (for example turning on Pixabay images) silently
+     reverted after a restart, because the stale database row kept winning
+     over the freshly `.env`-derived file.
 6. **Gateway** (`gateway/`, new, not part of Presenton): the Sanrathi
    backend's watermark stamper and the `/v1/slides/*` router that turns a
    topic or a lecture transcript into a Slide Maker job.
@@ -166,6 +172,7 @@ servers/nextjs/components/ui/presenton-splash-loader.tsx
 servers/nextjs/components/ui/progress-bar.tsx
 servers/nextjs/components/ui/switch.tsx
 servers/nextjs/lib/runtime-provider-config.ts
+servers/fastapi/services/provider_settings.py
 start.js
 ```
 
