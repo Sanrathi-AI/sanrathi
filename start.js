@@ -755,9 +755,11 @@ const main = async () => {
     await ensurePresentationExportNodeDependencies();
   }
 
-  if (canChangeKeys) {
-    setupUserConfigFromEnv();
-  }
+  // Modified by Sanrathi, 2026: also sync .env into userConfig.json when
+  // CAN_CHANGE_KEYS=false. Otherwise the UI's /api/runtime-config reports the
+  // provider as unconfigured and the app loops between / and /upload.
+  // setupUserConfigFromEnv() is a no-op when no provider env vars are set.
+  setupUserConfigFromEnv();
 
   syncNginxConfigForDev();
 

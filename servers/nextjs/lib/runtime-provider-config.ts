@@ -9,7 +9,9 @@ export const REDACTED_SECRET_PLACEHOLDER = "__configured__";
 // Numeric settings such as LLM_MAX_OUTPUT_TOKENS must remain visible or the
 // client-side config validator will reject an otherwise valid shared config.
 const SECRET_FIELD =
-  /(?:API_KEY|ACCESS_KEY_ID|SECRET_ACCESS_KEY|SESSION_TOKEN|ACCESS_TOKEN|REFRESH_TOKEN|PASSWORD)$/i;
+  // Modified by Sanrathi, 2026: AUTH_PASSWORD_HASH and AUTH_SECRET_KEY (the JWT
+  // signing key) were sent to every logged-in user; redact them too.
+  /(?:API_KEY|ACCESS_KEY_ID|SECRET_ACCESS_KEY|SESSION_TOKEN|ACCESS_TOKEN|REFRESH_TOKEN|PASSWORD|PASSWORD_HASH|SECRET_KEY)$/i;
 
 export type RuntimeProviderConfig = {
   configured: boolean;
