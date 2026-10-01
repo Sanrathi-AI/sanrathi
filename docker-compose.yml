@@ -6,10 +6,13 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      # Set PRESENTON_HTTP_HOST_PORT to change the host port.
-      - "${PRESENTON_HTTP_HOST_PORT:-5001}:80"
-      # Required for Codex OAuth callback (OpenAI redirects browser directly to localhost:1455)
-      - "1455:1455"
+      # Modified by Sanrathi, 2026: bound to localhost only (the Sanrathi gateway is the
+      # only client); the 1455 "Sign in with ChatGPT" callback port is removed.
+      - "127.0.0.1:${PRESENTON_HTTP_HOST_PORT:-5001}:80"
+    # Modified by Sanrathi, 2026: on Linux Docker, host.docker.internal must be mapped
+    # explicitly so the container can reach Ollama running on the host.
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     volumes:
       - ./app_data:/app_data
       - ./servers/fastapi/templates:/app/servers/fastapi/templates:ro
