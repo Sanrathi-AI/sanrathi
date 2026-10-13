@@ -52,6 +52,15 @@ of upstream (see section 10 of the build guide, "Staying up to date").
      so a `.env` change (for example turning on Pixabay images) silently
      reverted after a restart, because the stale database row kept winning
      over the freshly `.env`-derived file.
+   - `_component_image_prompt_description` (`templates/v2/schema.py`) gave the
+     text model the same instruction for every image provider. Pexels and
+     Pixabay are literal keyword search, not semantic image understanding, so
+     a descriptive sentence (what works for a real image-generation provider)
+     returns whichever word happens to have lots of stock photos rather than
+     the actual slide subject (a historical-event description returned salt
+     seasoning photos, matching the word "salt"). Now asks for a short,
+     concrete, literal noun phrase, with a fallback rule, whenever a stock
+     search provider is selected.
 7. **Gateway** (`gateway/`, new, not part of Presenton): the Sanrathi
    backend's watermark stamper and the `/v1/slides/*` router that turns a
    topic or a lecture transcript into a Slide Maker job.
@@ -177,6 +186,7 @@ servers/nextjs/components/ui/progress-bar.tsx
 servers/nextjs/components/ui/switch.tsx
 servers/nextjs/lib/runtime-provider-config.ts
 servers/fastapi/services/provider_settings.py
+servers/fastapi/templates/v2/schema.py
 start.js
 ```
 
