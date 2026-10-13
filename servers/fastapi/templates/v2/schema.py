@@ -7,6 +7,7 @@ import math
 import re
 from typing import Any
 
+from utils.image_provider import is_pixabay_selected, is_pixels_selected
 from utils.infographic_catalog import INFOGRAPHIC_BY_TYPE
 
 from .models.layouts import RawSlideLayout
@@ -1543,6 +1544,30 @@ def _component_image_prompt_key(element: dict[str, Any]) -> str:
 
 
 def _component_image_prompt_description(element: dict[str, Any]) -> str:
+    # Modified by Sanrathi, 2026: Pexels/Pixabay are literal keyword search
+    # over photographers' own tags, not semantic/AI image understanding.
+    # A descriptive sentence like "A black and white photograph of Mahatma
+    # Gandhi leading the historic Salt March in 1930" matches on whichever
+    # word happens to have stock photos (here: "salt"), returning seasoning
+    # and salt-farming photos. A short, concrete, literal noun phrase (what a
+    # photographer would actually tag a photo with) searches far better. This
+    # only changes the instruction for stock-search providers; a real image
+    # generation provider still gets the original descriptive-prompt wording.
     if element.get("is_icon") is True:
         return "Search query for the replacement icon."
+    if is_pixels_selected() or is_pixabay_selected():
+        return (
+            "Stock photo search query for the replacement image: 2-5 concrete, "
+            "literal nouns only (e.g. 'students classroom India', 'solar panel "
+            "field', 'ocean waves beach'). Do not describe a scene, an event, a "
+            "specific historical moment, or an abstract idea; name only the "
+            "physical subject, setting or objects a photographer would have "
+            "actually photographed and tagged. If the slide's exact topic has "
+            "no likely stock photo (a specific person's action, a named "
+            "historical event, a law, a diagram, an abstract concept), fall "
+            "back to the closest generic, concrete, and widely-photographed "
+            "subject that still fits the slide (e.g. for a protest march, use "
+            "'crowd protest march' or 'people walking road', not the event's "
+            "name or date)."
+        )
     return "Prompt for the replacement image."
